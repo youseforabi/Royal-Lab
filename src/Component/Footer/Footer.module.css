@@ -1,0 +1,38 @@
+.footer {
+    height: 50vh ;
+    background-image: url('https://s3-alpha-sig.figma.com/img/3efc/add5/872da953000a3b54202d14c31dc7f2a1?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c0mulZmB1xyEht8ERAmxCkmCxxyIXWMMGYHAYQbUgTN31jPlDLerbmUmF7WX3nvx6Gp3X9m4RGINbJLtLInaphtrvISLJ9bJLM-teKtgdL0bMZKot6hNaE5OdoL6RIVwFILuKbq3FBKPX0MOqkXQI4fdEBv8gY48Jk3QzP~wEuvjMnvVKjmY7Qwl3HFLJYR-HQ5f2HcAs~l1Swhc7ZLhnBw2kx0K4VpNFPvSUTdXYo~C~xHvRIn6Gdn-pqZFOPOUkeGtUfVqGZzSdntKZ-y34w7HwH6eZ9aqM5~tk6VTZKC4fJmifcHdlV9uqFTHnbqK5nPvShjxGLiaEPOOFj1MhQ__');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+  }
+  li{
+    cursor: pointer;
+  }
+  .logo {
+    width: 350px;
+    height: auto;
+  }
+  
+  .layer {
+    background-color: rgba(0, 0, 0, 0.489);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .alignRight {
+    direction: rtl;
+    text-align: right;
+  }
+
+
+
+
+
+
+
+
+
+
+ 
