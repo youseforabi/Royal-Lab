@@ -24,6 +24,10 @@ i18n
           // login page
           'LoginPage' : 'Login',
           'help' : 'Help',
+          'errorMsgLogin'  :'Wrong Password' ,
+          'logOut' :'Log Out',
+          'pls' :'please login first',
+
           // there is contact us in the navbar and here
           // 'Contact Us' : 'Contact Us',
           // 'Login' : 'تسجيل الدخول',
@@ -31,13 +35,23 @@ i18n
           'loginPara':'Get the best medical care with the Royal Medical Analysis Laboratory',
           'tasaphah' : 'Browse Now!',
           'hello'  : 'Hello',
-          'EmailLogin'  : 'Email',
           'password'  : 'Password',
+          'EmailLogin'  : 'Email',
           'forgetPassword'  : 'Forget Password ?',
           'createNewAccount'  : 'Create New Account',
 
           // register page
           'registerPage' : 'Register',
+          'createNewAccount' : 'Create New Account',
+          'createAccount' : 'Create Account',
+          'errorMsg' :'This Account Already Exists',
+          'loading' : 'loading...',
+          "errorMessageName": "Enter the first three names",
+          "errorMessageNamemin": "Enter at least three names",
+          "errorPhoneRequired": "Phone is required",
+          "errorPasswordRequired": "Password is required",
+          "errorPasswordMismatch": "Passwords do not match",
+          "errorPasswordComplexity": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character, and be at least 8 characters long",
           // there is contact us in the navbar and here
           // 'createNewAccount'  : 'Create New Account',
           // 'tasaphah' : 'Browse Now!',
@@ -45,6 +59,8 @@ i18n
           'phone' : 'Phone Number*',
           'Emailregister'  : 'Eamil*',
           'passwordRegister'  : 'Password*',
+          'rePassword' : 'Password Confirm*',
+
 
 
 
@@ -421,6 +437,10 @@ i18n
           // login page
           'LoginPage' : 'تسجيل دخول',
           'help' : 'مساعدة',
+          'errorMsgLogin'  :'كلمة مرور خاطئة' ,
+          'logOut' : 'تسجيل خروج',
+          'pls' :'سجل دخولك اولا',
+
           // there is contact us in the navbar and here
           // 'Contact Us' : 'تواصل معنا',
           // 'Login' : 'تسجيل الدخول',
@@ -431,13 +451,26 @@ i18n
           'EmailLogin'  : 'البريد الالكتروني',
           'password'  : 'كلمة المرور',
           'forgetPassword'  : 'هل نسيت كلمة المرور ؟',
-          'createNewAccount'  : 'انشاء حساب جديد',
 
 
 
 
           // register page
           'registerPage' : 'عمل حساب',
+          'createAccount' : 'انشاء حساب',
+          'createNewAccount' : 'انشاء حساب جديد',
+
+          'errorMsg' :'هذا الحساب موجود بالفعل',
+          'loading' : 'جاري التحميل ....',
+
+          "errorNameRequired": "ادخل الاسم",
+          "errorMessageNamemin": "ادخل الاسم ثلاثي",
+          "errorPhoneRequired": "الهاتف مطلوب",
+          "errorPasswordRequired": "كلمة المرور مطلوبة",
+          "errorPasswordMismatch": "كلمتا المرور غير متطابقتين",
+          "errorPasswordComplexity": "يجب أن تحتوي كلمة المرور على حرف كبير وحرف صغير ورقم وحرف خاص، وأن تكون على الأقل ٨ أحرف",
+
+          "errorMessagePassword": "يجب أن تكون كلمة المرور من 8 أحرف على الأقل",
           // there is contact us in the navbar and here
           // 'Create Account' :'انشاء حساب',
           // 'tasaphah' : 'تصفح الان ! ',
@@ -445,6 +478,8 @@ i18n
           'phone' : 'رقم الجوال*',
           'Emailregister'  : 'البريد الالكتروني*',
           'passwordRegister'  : 'كلمة المرور*',
+          'rePassword'  : 'تأكيد كلمة المرور *' ,
+
 
 
 

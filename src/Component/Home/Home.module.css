@@ -106,45 +106,24 @@ span {
   border-top-left-radius: 10px !important;
 }
 
-.TabPanel {
+/* .TabPanel {
   width: 100% !important;
-}
+} */
 
-.theCard1 {
-  background-color: #E8EAF6;
-  display: flex;
+.center-nav { 
+  display: flex !important;
   justify-content: center !important;
-  gap: 70px;
-  padding: 30px;
-
 }
 
-.cardHome1 {
-  display: flex;
-  height: 350px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border: 0.5px solid #B39330;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(179, 147, 48, 0.5);
-  padding: 85px;
-  flex: 1;
-  cursor: pointer;
+.thewholeCards{
 
-
+  background-color: red;
 }
 
-.theCard{
-  background-color: #E8EAF6;
-  padding: 30px;
-
-}
 
 .cardHome {
   display: flex;
-  height: 350px;
+  height: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -152,15 +131,14 @@ span {
   border: 0.5px solid #B39330;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(179, 147, 48, 0.5);
-  padding: 85px;
+  padding: 20px;
   flex: 1;
   cursor: pointer;
-
+}
+.active{
+  background-color: red !important;
 }
 
-.activeTab {
-  background-color: #E8E1CE !important;
-}
 
 .clients {
   margin: 60px 180px;
@@ -193,97 +171,28 @@ span {
 
 /* Media Queries for responsiveness */
 
-@media only screen and (max-width: 1368px) {
 
-  .theCard1{
-    display: flex;
-    flex-direction: row !important;
+@media (max-width: 1400px) {
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
     justify-content: center;
-    align-items: center;
-    gap: 80px;
     padding: 20px;
   }
-  
-  .theCard{
-
-
-  }
-
-  
-
 
 }
+
 @media (max-width: 1250px) {
   .buttonHome {
     left: 140px;
     right: 140px;
     width: 20%;
   }
-  .cardHome1{
-    padding: 100px;
-  }
-  .cardHome{
-    padding: 95px;
-  }
-  .theCard{
-      gap: 150px;
-      padding: 30px;
-  }
-}
-
-@media only screen and (max-width: 1224px) 
-{  .theCard1{
-    display: flex;
-    justify-content: center !important ;
-    align-items: center;
-  }
-  .cardHome1{
-
-  }
-  .theCard{
-    display: flex;
-    justify-content: center !important ;
-    align-items: center;
-    gap: 180px !important;
-   
-  }
-  .cardHome{
-    
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-
-    padding: 100px !important;
-
-  }
 
 }
-@media only screen and (max-width: 1180px) 
-{  .theCard1{
-    display: flex;
-    justify-content: center !important ;
-    align-items: center;
-    gap: 100px;
-  }
-  .cardHome1{
 
-  }
-  .theCard{
-    display: flex;
-    justify-content: center !important ;
-    align-items: center;
-    gap: 190px !important;
-   
-  }
-  .cardHome{
-    
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-
-    padding: 100px !important;
-
-  }
-
-}
 
 
 @media (max-width: 992px) {
@@ -312,36 +221,12 @@ span {
   .line {
     left: 80px;
   }
-  .theCard {
-    gap: 120px;
-
-  }
-  .cardHome {
-    padding: 78px;
-  }
+  
   .clients {
     margin: 40px 100px;
   }
 }
-@media (max-width: 913px) {
 
-  .theCard1{
-    display: flex;
-    flex-direction: column;
-  }
-  .cardHome1{
-    margin: auto;
-    height: 3% !important;
-    width: 5% !important;
-  }
-
-  .cardHome{
-    margin: auto;
-    height: 3% !important;
-    width: 5% !important;
-  }
-
-}
 
 @media (max-width: 895px) {
 
@@ -386,36 +271,7 @@ span {
   .icons {
     left: 50px;
   }
-  /* .contactHome,
-  .line {
-    left: 50px;
-  } */
-.theCard{
-  background-color: #E8EAF6;
-  gap: 120px;
-  padding: 30px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  
-
-}
-
-.cardHome {
-  display: flex;
-  height: 350px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border: 0.5px solid #B39330;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(179, 147, 48, 0.5);
-  padding: 75px;
-  flex: 1;
-  cursor: pointer;
-
-}
+ 
   .clients {
     margin: 20px 50px;
   }
@@ -459,28 +315,6 @@ span {
     left: 20px;
     right: 20px;
   }
-.theCard{
-  background-color: #E8EAF6;
-  gap: 70px;
-  padding: 30px;
-
-}
-
-.cardHome {
-  display: flex;
-  height: 350px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  border: 0.5px solid #B39330;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(179, 147, 48, 0.5);
-  padding: 85px;
-  flex: 1;
-  cursor: pointer;
-
-}
   .clients {
     margin: 50px 30px;
   }

@@ -81,7 +81,15 @@
   .alignLeft {
     text-align: left !important;
   }
-  
+  .select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
   .personalInfoDisplay {
     width: 100%;
     border: 1px solid #ccc;
