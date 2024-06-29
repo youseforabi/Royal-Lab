@@ -27,7 +27,7 @@ const Services = () => {
   };
 
   useEffect(() => {
-    dispatch(fetchServices({page: 1, per_page: 1}));
+    dispatch(fetchServices({page: 1, per_page: 20}));
     dispatch(fetchPackages({packages_page: 1, packages_per_page: 20}));
     console.log(packages);
   }, [dispatch]);
