@@ -62,13 +62,13 @@ i18n
           'rePassword' : 'Password Confirm*',
 
           // profile page
-
+          'Profile' : 'Personal Profile',
           'personalInfo' : 'Personal Info',
           'Address' : 'Address',
           'file' : 'File',
           'Name' : 'Name',
           'Phone' : 'Phone',
-          'email' :'Email',
+          'email1' :'Email',
 
           
 
@@ -493,13 +493,14 @@ i18n
           'rePassword'  : 'تأكيد كلمة المرور *' ,
 
           // profile page
+          'Profile' : 'الملف الشخصي',
 
           'personalInfo' : 'المعلومات الشخصية',
           'Address' : 'العنوان',
           'file' : 'الملف',
           'Name' : 'الاسم',
           'Phone' : 'الجوال',
-          'email' :'البريد الالكتروني',
+          'email1' :'البريد',
 
 
 
