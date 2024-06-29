@@ -577,9 +577,9 @@ i18n
 
            //  Services
 
-           'servicesp1' : 'الخدمة : تحليل دم',
-           'servicesp2' : 'التاريخ : 2/8/2024',
-           'servicesp3' : 'الخدمة : اكتملت',
+           'servicesp1' : 'الخدمة :  ',
+           'servicesp2' : 'التاريخ : ',
+           'servicesp3' : 'الخدمة : ',
 
            'updloadPdf' : 'تحميل pdf',
 
