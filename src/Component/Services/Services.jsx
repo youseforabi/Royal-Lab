@@ -6,6 +6,7 @@ import { fetchPackages, fetchServices, searchServices } from '../../features/ser
 import { API } from '../../features/globals';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const { t, i18n } = useTranslation();
@@ -66,7 +67,12 @@ const Services = () => {
       <div className="col-md-4">
 
 
-        <input type="text" placeholder={t('UploadWasfa')} className='w-100 form-control py-3 rounded rounded-4 my-2' />
+        <Link to={"recipeMedical"} className='w-100 form-control py-3 rounded rounded-4 my-2 d-flex justify-content-between align-items-center'>
+          {t('UploadWasfa')}
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.25 21.25V31.25C6.25 31.913 6.51339 32.5489 6.98223 33.0178C7.45107 33.4866 8.08696 33.75 8.75 33.75H31.25C31.913 33.75 32.5489 33.4866 33.0178 33.0178C33.4866 32.5489 33.75 31.913 33.75 31.25V21.25M20 25V4.375M27.5 11.25L20 3.75L12.5 11.25" stroke="#B39330" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </Link>
 
       </div>
 
