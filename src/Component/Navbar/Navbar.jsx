@@ -89,7 +89,6 @@ const Navbar = () => {
       
       
       
-      {userToken !== null? 
       <Nav className={`${Styles.linksContainer} mx-3 w-100 px-4 d-flex`}>
       <Nav.Link className={`${Styles.navLink}  px-4 my-2`} as={Link} to="/">{t('Home')}</Nav.Link>
 
@@ -104,24 +103,7 @@ const Navbar = () => {
     <Dropdown.Submenu  
       openOnHover = 'true'
       position={isArabic ?  'left' : 'right'}>
-        <Dropdown.Item >
-          <Link className="col-md-2 text-decoration-none text-black" to={'/foodAnalysis'}>{t('tahalilElgezaa')}</Link>
-        </Dropdown.Item>
-        <Dropdown.Item>
-          <Link className="col-md-2 text-decoration-none text-black" to={'/waterAnalysis'}>{t('waterAnalysis')}</Link>
-        </Dropdown.Item>
-        <Dropdown.Item>
-          <Link className="col-md-2 text-decoration-none text-black" to={'/pharmaAnalysis'}>{t('pharmaAnalysis')}</Link>
-        </Dropdown.Item>
-      </Dropdown.Submenu>
-    </Dropdown.Item>
-    <Dropdown.Item>
-      {t('companies')}<i className={`px-2 fa-solid ${isArabic ? 'fa-arrow-left' : 'fa-arrow-right'}`}></i>
-      <Dropdown.Submenu 
-openOnHover = 'true'
-      
-      position={isArabic ?  'left' : 'right'}>
-        <Dropdown.Item>
+ <Dropdown.Item>
           <Link className="col-md-2 text-decoration-none text-black" to={'/recipeMedical'}>{t('recipeMedical')}</Link>
         </Dropdown.Item>
         <Dropdown.Item>
@@ -142,6 +124,34 @@ openOnHover = 'true'
         <Dropdown.Item>
           <Link className="col-md-2 text-decoration-none text-black">{t('Vaccinations')}</Link>
         </Dropdown.Item>
+
+
+        
+      </Dropdown.Submenu>
+    </Dropdown.Item>
+
+
+    <Dropdown.Item>
+      {t('companies')}<i className={`px-2 fa-solid ${isArabic ? 'fa-arrow-left' : 'fa-arrow-right'}`}></i>
+        <Dropdown.Submenu 
+          openOnHover = 'true'
+      
+      position={isArabic ?  'left' : 'right'}>
+
+<Dropdown.Item >
+          <Link className="col-md-2 text-decoration-none text-black" to={'/foodAnalysis'}>{t('tahalilElgezaa')}</Link>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link className="col-md-2 text-decoration-none text-black" to={'/waterAnalysis'}>{t('waterAnalysis')}</Link>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link className="col-md-2 text-decoration-none text-black" to={'/pharmaAnalysis'}>{t('pharmaAnalysis')}</Link>
+        </Dropdown.Item>
+
+
+
+
+       
       </Dropdown.Submenu>
     </Dropdown.Item>
   </Dropdown>
@@ -154,8 +164,8 @@ openOnHover = 'true'
         {t('Switch Language')}
 
       </Nav.Link>
-    </Nav> : <div className="alert alert-danger text-center my-auto">{t('pls')}</div>
-    }
+    </Nav> 
+    
 
       </div>
 

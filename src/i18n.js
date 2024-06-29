@@ -61,6 +61,15 @@ i18n
           'passwordRegister'  : 'Password*',
           'rePassword' : 'Password Confirm*',
 
+          // profile page
+
+          'personalInfo' : 'Personal Info',
+          'Address' : 'Address',
+          'file' : 'File',
+          'Name' : 'Name',
+          'Phone' : 'Phone',
+          
+
 
 
 
@@ -479,6 +488,14 @@ i18n
           'Emailregister'  : 'البريد الالكتروني*',
           'passwordRegister'  : 'كلمة المرور*',
           'rePassword'  : 'تأكيد كلمة المرور *' ,
+
+          // profile page
+
+          'personalInfo' : 'المعلومات الشخصية',
+          'Address' : 'العنوان',
+          'file' : 'الملف',
+          'Name' : 'الاسم',
+          'Phone' : 'الجوال',
 
 
 

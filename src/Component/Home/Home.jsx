@@ -85,47 +85,7 @@ const Home = () => {
           tabIndex="0"
         >
           <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-              <Link className="col-md-2 text-decoration-none text-black" to={'/foodAnalysis'}>
-
-                <div className={Styles.cardHome}>
-                <i className="fa-solid fa-apple-whole mb-3 fs-2"></i>
-                <h3 className='mt-2 text-center'>{t('tahalilElgezaa')}</h3>
-                  </div>
-                </Link>  
-              </div>
-
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-              <Link className="col-md-2 text-decoration-none text-black " to={'/waterAnalysis'}>
-
-                <div className={Styles.cardHome}>
-                <i className="fa-solid fa-hand-holding-medical fs-2 mb-3"></i>
-                <h5 className="mt-2 text-center">{t('waterAnalysis')}</h5>
-                </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-              <Link className="col-md-2 text-decoration-none text-black" to={'/pharmaAnalysis'}>
-                <div className={Styles.cardHome}>
-                <VaccinesIcon className='fs-2 mb-3' />
-                <h5 className="mt-2 text-center">{t('pharmaAnalysis')}</h5>
-                </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="tab-pane fade"
-          id="profile-tab-pane"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-          tabIndex="0"
-        >
-          <div className="container">
-            <div className="row justify-content-center">
+          <div className="row justify-content-center">
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
               <Link className="col-md-2 text-decoration-none text-black" to={"./recipeMedical"}>
                 <div className={Styles.cardHome}>
@@ -177,6 +137,66 @@ const Home = () => {
               </div>
               
             </div>
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+          </div>
+        </div>
+        <div
+          className="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabIndex="0"
+        >
+          <div className="container">
+
+
+          <div className="row justify-content-center">
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className="col-md-2 text-decoration-none text-black" to={'/foodAnalysis'}>
+
+                <div className={Styles.cardHome}>
+                <i className="fa-solid fa-apple-whole mb-3 fs-2"></i>
+                <h3 className='mt-2 text-center'>{t('tahalilElgezaa')}</h3>
+                  </div>
+                </Link>  
+              </div>
+
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className="col-md-2 text-decoration-none text-black " to={'/waterAnalysis'}>
+
+                <div className={Styles.cardHome}>
+                <i className="fa-solid fa-hand-holding-medical fs-2 mb-3"></i>
+                <h5 className="mt-2 text-center">{t('waterAnalysis')}</h5>
+                </div>
+                </Link>
+              </div>
+
+              <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className="col-md-2 text-decoration-none text-black" to={'/pharmaAnalysis'}>
+                <div className={Styles.cardHome}>
+                <VaccinesIcon className='fs-2 mb-3' />
+                <h5 className="mt-2 text-center">{t('pharmaAnalysis')}</h5>
+                </div>
+                </Link>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </div>
