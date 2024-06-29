@@ -317,6 +317,7 @@ i18n
           'opt2specialization' : 'Analysis',
           'opt3specialization' : 'Cardiologist',
           'requestBtnNow' : 'Send Request',
+          'consultationType' : 'consultation Type',
 
           // Food analysis
           'foodAnalysis' : 'Food Analysis' ,
@@ -396,6 +397,13 @@ i18n
           'phonePharmacy' : 'Phone',
           'subjectPharmacy' : 'Subject',
           'notesPharmacy' : 'Notes(optional)',
+          "pleaseSelectDoctor": "Please select a doctor.",
+          "pleaseSelectSpecialization": "Please select a specialization.",
+          "pleaseSelectDate": "Please select a date.",
+          "pleaseSelectConsultation": "Please select a consultation.",
+          "appointmentSentSuccessfully": "Appointment sent successfully we will contact you.",
+          "errorSubmittingAppointment": "Error submitting appointment.",
+
 
           'sendPharmacy' : 'Send',
 
@@ -529,8 +537,12 @@ i18n
           'price' : '250.رس',
           'addToCar' : 'اضافة الي العربة',
           'tahalilhLists' : 'قائمة التحاليل',
-
-
+          "pleaseSelectDoctor": "يرجى اختيار طبيب.",
+          "pleaseSelectSpecialization": "يرجى اختيار تخصص.",
+          "pleaseSelectDate": "يرجى اختيار تاريخ.",
+          "pleaseSelectConsultation": "يرجى اختيار استشارة.",
+          "appointmentSentSuccessfully": "تم إرسال الطلب بنجاح سيتم التواصل معك.",
+          "errorSubmittingAppointment": "حدث خطأ أثناء إرسال الموعد.",
 
           // home page
           'welcome' : 'مرحبا بك في مختبرات رويال التشخيصية',
@@ -649,6 +661,7 @@ i18n
           'opt2specialization' : 'تحاليل',
           'opt3specialization' : 'امراض القلب',
           'requestBtnNow' : 'أرسل طلب',
+          'consultationType' : 'نوع الاستشارة',
 
           // Food analysis
           'foodAnalysis' : 'تحليل الغذاء' ,
