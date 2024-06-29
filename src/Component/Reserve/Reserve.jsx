@@ -1,40 +1,203 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Styles from './Reserve.module.css';
 import { useTranslation } from 'react-i18next';
 import DatePicker from 'react-datepicker';
+import { AppContext } from '../../Context/userContext';
+import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllServices } from '../../features/servicesSlice';
+import { fetchAllBranches } from '../../features/branchesSlice';
+import { ToastContainer, toast } from 'react-toastify';
+import { API } from '../../features/globals';
 import 'react-datepicker/dist/react-datepicker.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+const showSuccessMsg = (msg) => {
+  toast.success(msg, {
+    position: 'top-right',
+  });
+};
+
+const showErrorMessage = (msg) => {
+  toast.error(msg, {
+    position: 'top-right',
+  });
+};
 
 const Reserve = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir(i18n.language) === 'rtl';
+  const [userData, setUserData] = useState(null);
+  const [loader, setLoader] = useState(false);
+  const { userToken } = useContext(AppContext); // Assuming you have setUser and userToken in AppContext
+  const currentLanguage = i18n.language;
 
-  const [personalInfo, setPersonalInfo] = useState('');
+  useEffect(() => {
+    const getUserData = async () => {
+      try {
+        const res = await axios.get('https://royal-lab.webbing-agency.com/api/user/get', {
+          headers: {
+            Authorization: `Bearer ${userToken}`
+          }
+        });
+        if (res.data.status === true) {
+          setUserData(res.data.data.user); 
+          console.log(res.data.data.user);
+        }
+      } catch (err) {
+        console.error('Error fetching user data:', err);
+      }
+    };
+
+    getUserData();
+  }, [ userToken]);
+  
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [age, setAge] = useState('');
+  const [branch_id, setBranchId] = useState('');
+  const [service_id, setServiceId] = useState('');
   const [selectedDate, setSelectedDate] = useState(null); // State to store selected date/time
 
-  const handleInputChange = (e) => {
-    setPersonalInfo(e.target.value);
+  const dispatch = useDispatch();
+  const services = useSelector((state) => state.services.all_services);  
+  const branches = useSelector((state) => state.branches.branches);  
+  useEffect(() => {
+    dispatch(getAllServices());
+    dispatch(fetchAllBranches());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (userData && userData.name)
+      setName(userData.name)
+
+    if (userData && userData.phone)
+      setPhone(userData.phone)
+  }, [userData])
+  
+  const handleChangeName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleChangePhone = (e) => {
+    setPhone(e.target.value);
+  };
+
+  const handleChangeBranch = (e) => {
+    setBranchId(e.target.value);
+  };
+
+  const handleChangeService = (e) => {
+    setServiceId(e.target.value);
+  };
+
+  const handleChangeAge = (e) => {
+    setAge(e.target.value);
   };
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
+  const handleOnsubmit = async () => {
+    setLoader(true);
+    if (!name) {
+      showErrorMessage(t("pleaseEnterName"));
+      setLoader(false);
+    } else if (!age) {
+      showErrorMessage(t("pleaseEnterAge"));
+      setLoader(false);
+    } else if (!phone) {
+      showErrorMessage(t("pleaseEnterPhone"));
+      setLoader(false);
+    } else if (!selectedDate) {
+      showErrorMessage(t("pleaseEnterDate"));
+      setLoader(false);
+    } else if (!branch_id) {
+      showErrorMessage(t("pleaseSelectBranch"));
+      setLoader(false);
+    } else if (!service_id) {
+      showErrorMessage(t("pleaseSelectService"));
+      setLoader(false);
+    } else {
+      try {
+        const res = await axios.post(API + "/api/appointments/place", {
+          name: name,
+          age: age,
+          phone: phone,
+          date: selectedDate,
+          branch_id: branch_id,
+          service_id: service_id,
+        }, {
+          headers: {
+            Authorization: `Bearer ${userToken}`,
+            "Content-Type": "multipart/form-data",
+          }
+        });
+        setLoader(false);
+        if (res.data.status === true) {
+          showSuccessMsg(t("appointmentSentSuccussfuly"));
+          setTimeout(() => [
+            window.location.reload()
+          ], 1500);
+        }
+      } catch (err) {
+        setLoader(false);
+        console.error('Error fetching user data:', err);
+      }
+    }
+  };
+
   return (
     <div dir={i18n.dir(i18n.language)}>
+      <ToastContainer />
       <h1 className={`${Styles.main} ${isRTL ? Styles.rtl : Styles.ltr}`}>{t('bookAppointment')}</h1>
 
       <div className={`${Styles.upload} my-5`}>
+        {
+          loader ? (
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            ) : (
+              <>
+
         <div className={Styles.inputgroup}>
           <label className={Styles.lableOpt}>
-            {t('personalInfo')}
+            {t('name')}
           </label>
           <div className={Styles.personalInfoWrapper}>
-            <textarea
-              value={personalInfo}
-              onChange={handleInputChange}
+            <input
+              value={name}
+              onChange={handleChangeName}
               className={`form-control ${isRTL ? Styles.alignRight : Styles.alignLeft}`}
-              rows="3"
-              placeholder={`${t('namePlaceholder')}\n${t('agePlaceholder')}\n${t('phonePlaceholder')}`}
+              placeholder={`${t('name')}`}
+            />
+          </div>
+        </div>
+        <div className={Styles.inputgroup}>
+          <label className={Styles.lableOpt}>
+            {t('age')}
+          </label>
+          <div className={Styles.personalInfoWrapper}>
+            <input
+              value={age}
+              onChange={handleChangeAge}
+              className={`form-control ${isRTL ? Styles.alignRight : Styles.alignLeft}`}
+              placeholder={`${t('age')}`}
+            />
+          </div>
+        </div>
+        <div className={Styles.inputgroup}>
+          <label className={Styles.lableOpt}>
+            {t('Phone')}
+          </label>
+          <div className={Styles.personalInfoWrapper}>
+            <input
+              value={phone}
+              onChange={handleChangePhone}
+              className={`form-control ${isRTL ? Styles.alignRight : Styles.alignLeft}`}
+              placeholder={`${t('Phone')}`}
             />
           </div>
         </div>
@@ -62,10 +225,15 @@ const Reserve = () => {
             {t('lableOptPlace')}
           </label>
           <div className={Styles.selectWrapper}>
-            <select className={Styles.select} id="inputGroupSelect02">
-              <option className={Styles.opt} value="1">{t('opt1')}</option>
-              <option className={Styles.opt} value="2">{t('opt2')}</option>
-              <option className={Styles.opt} value="3">{t('opt3')}</option>
+            <select className={Styles.select} value={branch_id} onChange={handleChangeBranch} id="inputGroupSelect02">
+              <option className={Styles.opt} value={""}>{currentLanguage == "ar" ? "اختر ---" : "choose"}</option>
+              {
+                branches && (
+                  branches.map(branch => (
+                    <option className={Styles.opt} value={branch.id}>{currentLanguage == "ar" ? branch.address_ar : branch.address}</option>
+                  ))
+                )
+              }
             </select>
           </div>
         </div>
@@ -75,15 +243,23 @@ const Reserve = () => {
             {t('lableOptServe')}
           </label>
           <div className={Styles.selectWrapper}>
-            <select className={Styles.select} id="inputGroupSelect03">
-              <option className={Styles.opt} value="1">{t('opt4')}</option>
-              <option className={Styles.opt} value="2">{t('opt5')}</option>
-              <option className={Styles.opt} value="3">{t('opt6')}</option>
+            <select className={Styles.select} value={service_id} onChange={handleChangeService} id="inputGroupSelect03">
+              <option className={Styles.opt} value={""}>{currentLanguage == "ar" ? "اختر ---" : "choose"}</option>
+              {
+                services && (
+                  services.map(service => (
+                    <option className={Styles.opt} value={service.id}>{currentLanguage == "ar" ? service.name_ar : service.name}</option>
+                  ))
+                )
+              }
             </select>
           </div>
         </div>
 
-        <button className={`${Styles.serveBtnNow}`}>{t('serveBtnNow')}</button>
+        <button className={`${Styles.serveBtnNow}`} onClick={handleOnsubmit}>{t('serveBtnNow')}</button>
+        </>
+          )
+        }
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ const initialState = {
   message: '',
   errors: [],
   services: null,
+  all_services: null,
   notes: {},
   page: 1,
   per_page: 20,
@@ -42,6 +43,18 @@ export const fetchServices = createAsyncThunk(
   async ({page, per_page}, thunkAPI) => {
     try {
       const response = await axios.get(API + `/api/services/get-services-pagination?page=${page}&per_page=${per_page}`);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
+export const getAllServices = createAsyncThunk(
+  'services/getAllServices',
+  async (thunkAPI) => {
+    try {
+      const response = await axios.get(API + `/api/services/get-all-services`);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
@@ -136,7 +149,11 @@ const servicesSlice = createSlice({
       .addCase(searchServices.rejected, (state, action) => {
         state.search_status = 'failed';
         state.search_error = action.payload || 'Failed to search services';
-      });
+      })
+      // get all services
+      .addCase(getAllServices.fulfilled, (state, action) => {
+        state.all_services = action.payload.data[0]; // Access the inner array
+      })
   },
 });
 

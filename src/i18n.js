@@ -69,6 +69,7 @@ i18n
           'Name' : 'Name',
           'Phone' : 'Phone',
           'email1' :'Email',
+          'age' :'Age',
 
           
 
@@ -301,7 +302,13 @@ i18n
          
 
           'serveBtnNow' : 'Book Now!',
-
+          "pleaseEnterName": "Please enter a name",
+          "pleaseEnterAge": "Please enter an age",
+          "pleaseEnterPhone": "Please enter a phone number",
+          "pleaseEnterDate": "Please enter a date",
+          "pleaseSelectBranch": "Please select a branch",
+          "pleaseSelectService": "Please select a service",
+          "appointmentSentSuccussfuly": "Your appointment have sent successfuly, We will contact you!",
           // doctorConsultation
           'doctorConsultation' : 'Doctor Consultation',
           // 'Date' : 'Date',
@@ -501,6 +508,7 @@ i18n
           'Address' : 'العنوان',
           'file' : 'الملف',
           'Name' : 'الاسم',
+          'age' : 'العمر',
           'Phone' : 'الجوال',
           'email1' :'البريد',
 
@@ -620,6 +628,13 @@ i18n
           'opt6' : 'تحليل الدواء',
 
           'serveBtnNow' : 'احجز الان!',
+          "pleaseEnterName": "يرجى إدخال الاسم",
+          "pleaseEnterAge": "يرجى إدخال العمر",
+          "pleaseEnterPhone": "يرجى إدخال رقم الهاتف",
+          "pleaseEnterDate": "يرجى إدخال التاريخ",
+          "pleaseSelectBranch": "يرجى اختيار الفرع",
+          "pleaseSelectService": "يرجى اختيار الخدمة",
+          "appointmentSentSuccussfuly": "تم إرسال طلبك بنجاح، سوف نقوم بالتواصل معك!",
 
           // doctor consultation
           'doctorConsultation' : 'استشارة الطبيب',

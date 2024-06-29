@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Styles from './Recipe.module.css';
 import { useTranslation } from 'react-i18next';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { API } from '../../features/globals';
 import axios from 'axios';
 import { AppContext } from '../../Context/userContext';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const showSuccessMsg = (msg) => {
   toast.success(msg, {
@@ -51,8 +51,8 @@ const Recipe = () => {
             "Content-Type": "multipart/form-data",
           }
         });
+        setLoader(false)
         if (res.data.status === true) {
-          setLoader(false)
           showSuccessMsg(t("fileUploadedSuccessfully"));
           setNotes("")
           setFile(null)
