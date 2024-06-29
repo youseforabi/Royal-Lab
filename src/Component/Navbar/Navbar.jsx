@@ -55,8 +55,8 @@ const Navbar = () => {
     <BootstrapNavbar expand="lg" className={i18n.language === 'ar' ? 'text-right' : 'text-left' }>
 
       <button className="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i classNameName="fas fa-bars"></i> 
-                </button>
+      <i class="fa-solid fa-bars"></i>
+                      </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
     {userToken === null ? (

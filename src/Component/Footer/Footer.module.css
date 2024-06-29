@@ -26,6 +26,17 @@
 ul li {
   cursor: pointer;
 }
+
+  .webbing {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: white;
+  }
+
+  .webbing:hover {
+    color: blue;
+    transform: scale(1.1);
+  }
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .footer {

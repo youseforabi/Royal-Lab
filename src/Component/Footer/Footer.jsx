@@ -50,8 +50,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className='text-center py-4'>
+        <p>Powered by <a className={Styles.webbing} href="http://webbing-agency.com/">webbing agency</a></p>
+        </div>
+        
       </div>
+      
+
+      
     </footer>
+
+    
+    
   );
 };
 
