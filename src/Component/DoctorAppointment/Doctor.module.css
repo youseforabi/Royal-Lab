@@ -39,6 +39,22 @@
     border: #B39330 1px solid;
     border-radius: 20px;
   }
+  .select {
+    width: 100%;
+    padding: 10px 30px 10px 10px; /* Adjust right padding for the arrow */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Adjust arrow position */
+    background-size: 16px; /* Adjust arrow size */
+  }
   
   .inputgroup {
     width: 50% !important;
@@ -51,15 +67,16 @@
     font-weight: 700;
   }
   
-  .theServe {
-    color: black !important;
-    margin: 15px 0;
-    font-weight: 700;
-  }
-  
   .opt {
     font-weight: 700 !important;
   }
+  
+  /* RTL specific adjustments for Arabic */
+  [dir="rtl"] .select {
+    background-position: left 10px center; 
+    padding: 15px 15px 15px 35px; 
+  }
+  
   
   .requestBtnNow {
     background-color: rgba(179, 147, 48, 1);
@@ -73,6 +90,12 @@
     margin-top: 20px;
     cursor: pointer;
   }
+
+  .theServe {
+    color: black !important;
+    margin: 15px 0;
+    font-weight: 700;
+  }
   
   .alignRight {
     text-align: right !important;
@@ -81,15 +104,7 @@
   .alignLeft {
     text-align: left !important;
   }
-  .select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-  }
+ 
   .personalInfoDisplay {
     width: 100%;
     border: 1px solid #ccc;

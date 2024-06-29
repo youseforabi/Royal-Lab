@@ -121,20 +121,21 @@ const Doctor = () => {
               </div>
             ) : (
               <>
+<div className={Styles.inputgroup}>
+  <label htmlFor="inputGroupSelect01" className={Styles.lableOpt}>
+    {t('doctorName')}
+  </label>
+  <select className={Styles.select} value={doctor} onChange={handleChangeDoctor} id="inputGroupSelect01">
+    <option className={Styles.opt} value="">{currentLanguage === "ar" ? "اختر ---" : "Choose ---"}</option>
+    {doctors && doctors.map(doctor => (
+      <option className={Styles.opt} key={doctor.id} value={doctor.id}>
+        {currentLanguage === "ar" ? doctor.name_ar : doctor.name}
+      </option>
+    ))}
+  </select>
+</div>
 
-        <div className={Styles.inputgroup}>
-          <label htmlFor="inputGroupSelect01" className={Styles.lableOpt}>
-            {t('doctorName')}
-          </label>
-          <select className={Styles.select} value={doctor} onChange={handleChangeDoctor} id="inputGroupSelect01">
-            <option className={Styles.opt} value="">{currentLanguage === "ar" ? "اختر ---" : "choose"}</option>
-            {doctors && doctors.map(doctor => (
-              <option className={Styles.opt} key={doctor.id} value={doctor.id}>
-                {currentLanguage === "ar" ? doctor.name_ar : doctor.name}
-              </option>
-            ))}
-          </select>
-        </div>
+
 
         <div className={Styles.inputgroup}>
           <label htmlFor="inputGroupSelect02" className={Styles.lableOpt}>

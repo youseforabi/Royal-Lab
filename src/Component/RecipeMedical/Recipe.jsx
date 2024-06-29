@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Styles from './Recipe.module.css';
 import { useTranslation } from 'react-i18next';
 import { API } from '../../features/globals';
@@ -23,13 +23,21 @@ const Recipe = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir(i18n.language) === 'rtl';
   const [file, setFile] = useState(null);
+  const [previewUrl, setPreviewUrl] = useState(null); // New state for preview URL
   const [notes, setNotes] = useState("");
   const [loader, setLoader] = useState(false);
-  const {  userToken } = useContext(AppContext); // Assuming you have setUser and userToken in AppContext
+  const { userToken } = useContext(AppContext);
 
   const handleChangeFile = (e) => {
-    setFile(e.target.files[0]);
-    console.log(e.target.files[0]);
+    const file = e.target.files[0];
+    setFile(file);
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setPreviewUrl(reader.result); // Set the preview URL
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   const handleChangeNotes = (e) => {
@@ -37,31 +45,31 @@ const Recipe = () => {
   };
 
   const handleOnsubmit = async () => {
-    setLoader(true)
+    setLoader(true);
     if (!file) {
-      showErrorMessage(t("chooseFileRecipe"))
-      setLoader(false)
+      showErrorMessage(t("chooseFileRecipe"));
+      setLoader(false);
     } else {
       try {
-        const res = await axios.post(API + "/api/prescription/put", {
-          file: file
-        }, {
+        const formData = new FormData();
+        formData.append('file', file);
+        const res = await axios.post(API + "/api/prescription/put", formData, {
           headers: {
             Authorization: `Bearer ${userToken}`,
             "Content-Type": "multipart/form-data",
           }
         });
-        setLoader(false)
+        setLoader(false);
         if (res.data.status === true) {
           showSuccessMsg(t("fileUploadedSuccessfully"));
-          setNotes("")
-          setFile(null)
+          setNotes("");
+          setFile(null);
+          setPreviewUrl(null); // Clear the preview URL
         }
       } catch (err) {
-        setLoader(false)
-        console.error('Error fetching user data:', err);
+        setLoader(false);
+        console.error('Error uploading file:', err);
       }
-
     }
   };
 
@@ -72,8 +80,8 @@ const Recipe = () => {
       <div className={Styles.upload}>
         {
           loader ? (
-            <div class="spinner-border" role="status">
-              <span class="sr-only">Loading...</span>
+            <div className="spinner-border" role="status">
+              <span className="sr-only">Loading...</span>
             </div>
           ) : (
             <>
@@ -86,6 +94,9 @@ const Recipe = () => {
                 accept="image/*"
                 className={Styles.fileInput}
               />
+              {previewUrl && (
+                <img src={previewUrl} alt="Preview" className={Styles.previewImage} />
+              )}
 
               <label htmlFor="notes" className={`${Styles.label} my-2`}>{t('notesLabel')}</label>
               <textarea

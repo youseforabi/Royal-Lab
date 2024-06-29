@@ -18,6 +18,8 @@ const Results = () => {
   const [totalPages, setTotal] = useState(1);  
   const [currentPage, setPage] = useState(1);  
 
+  const [msg ,setMsg] = useState('')
+
   useEffect(() => {
     const getUserData = async () => {
       try {
@@ -31,6 +33,11 @@ const Results = () => {
           setResults(res.data.data.data)
           setTotal(res.data.data.last_page)
           setPage(res.data.data.current_page)
+
+          if (res.data.data.data.length === 0) {
+            const message = currentLanguage === "ar" ? 'لا يوجد نتايج حاليا !' : 'there is no results now !';
+            setMsg(message); 
+          }
         }
       } catch (err) {
         console.error('Error fetching user data:', err);
@@ -54,6 +61,7 @@ const Results = () => {
       }
     } catch (err) {
       console.error('Error fetching user data:', err);
+
     }
   };
 
@@ -61,6 +69,8 @@ const Results = () => {
   return (
     <div dir={i18n.dir(i18n.language)}>
       <h1 className={`${Styles.main} ${isRTL ? Styles.rtl : Styles.ltr}`}>{t('Results')}</h1>
+
+      {msg ? <h1 className='text-center'>{msg}</h1> : ''}
 
       {
         (results && results.length > 0) && (
