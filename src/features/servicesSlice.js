@@ -24,6 +24,16 @@ const initialState = {
   packages_currentPage: 1,
   packages_totalPages: 1,
   packages_error: null,
+  search_status: 'idle',
+  search_message: '',
+  search_errors: [],
+  search_results: null,
+  search_notes: {},
+  search_page: 1,
+  search_per_page: 20,
+  search_currentPage: 1,
+  search_totalPages: 1,
+  search_error: null,
 };
 
 // Async thunk for fetching services
@@ -52,6 +62,19 @@ export const fetchPackages = createAsyncThunk(
   }
 );
 
+// Async thunk for searching services
+export const searchServices = createAsyncThunk(
+  'services/searchServices',
+  async ({query, page, per_page}, thunkAPI) => {
+    try {
+      const response = await axios.get(API + `/api/services/get-packages-search?search=${query}&page=${page}&per_page=${per_page}`);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
 // Create the slice
 const servicesSlice = createSlice({
   name: 'services',
@@ -63,6 +86,7 @@ const servicesSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
+      // Fetch services
       .addCase(fetchServices.pending, (state) => {
         state.status = 'loading';
       })
@@ -79,6 +103,7 @@ const servicesSlice = createSlice({
         state.status = 'failed';
         state.error = action.payload || 'Failed to fetch services';
       })
+      // Fetch packages
       .addCase(fetchPackages.pending, (state) => {
         state.packages_status = 'loading';
       })
@@ -94,6 +119,23 @@ const servicesSlice = createSlice({
       .addCase(fetchPackages.rejected, (state, action) => {
         state.packages_status = 'failed';
         state.packages_error = action.payload || 'Failed to fetch packages';
+      })
+      // Search services
+      .addCase(searchServices.pending, (state) => {
+        state.search_status = 'loading';
+      })
+      .addCase(searchServices.fulfilled, (state, action) => {
+        state.search_status = 'succeeded';
+        state.search_message = action.payload.message;
+        state.search_errors = action.payload.errors;
+        state.search_results = action.payload.data[0].data; // Access the inner array
+        state.search_totalPages = action.payload.data[0].last_page; // Access the inner array
+        state.search_currentPage = action.payload.data[0].current_page; // Access the inner array
+        state.search_notes = action.payload.notes;
+      })
+      .addCase(searchServices.rejected, (state, action) => {
+        state.search_status = 'failed';
+        state.search_error = action.payload || 'Failed to search services';
       });
   },
 });
