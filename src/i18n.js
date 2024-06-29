@@ -69,6 +69,7 @@ i18n
           'Name' : 'Name',
           'Phone' : 'Phone',
           'email1' :'Email',
+          'age' :'Age',
 
           
 
@@ -301,7 +302,13 @@ i18n
          
 
           'serveBtnNow' : 'Book Now!',
-
+          "pleaseEnterName": "Please enter a name",
+          "pleaseEnterAge": "Please enter an age",
+          "pleaseEnterPhone": "Please enter a phone number",
+          "pleaseEnterDate": "Please enter a date",
+          "pleaseSelectBranch": "Please select a branch",
+          "pleaseSelectService": "Please select a service",
+          "appointmentSentSuccussfuly": "Your appointment have sent successfuly, We will contact you!",
           // doctorConsultation
           'doctorConsultation' : 'Doctor Consultation',
           // 'Date' : 'Date',
@@ -310,6 +317,7 @@ i18n
           'opt2specialization' : 'Analysis',
           'opt3specialization' : 'Cardiologist',
           'requestBtnNow' : 'Send Request',
+          'consultationType' : 'consultation Type',
 
           // Food analysis
           'foodAnalysis' : 'Food Analysis' ,
@@ -389,6 +397,13 @@ i18n
           'phonePharmacy' : 'Phone',
           'subjectPharmacy' : 'Subject',
           'notesPharmacy' : 'Notes(optional)',
+          "pleaseSelectDoctor": "Please select a doctor.",
+          "pleaseSelectSpecialization": "Please select a specialization.",
+          "pleaseSelectDate": "Please select a date.",
+          "pleaseSelectConsultation": "Please select a consultation.",
+          "appointmentSentSuccessfully": "Appointment sent successfully we will contact you.",
+          "errorSubmittingAppointment": "Error submitting appointment.",
+
 
           'sendPharmacy' : 'Send',
 
@@ -496,6 +511,7 @@ i18n
           'Address' : 'العنوان',
           'file' : 'الملف',
           'Name' : 'الاسم',
+          'age' : 'العمر',
           'Phone' : 'الجوال',
           'email1' :'البريد',
 
@@ -516,8 +532,12 @@ i18n
           'price' : '250.رس',
           'addToCar' : 'اضافة الي العربة',
           'tahalilhLists' : 'قائمة التحاليل',
-
-
+          "pleaseSelectDoctor": "يرجى اختيار طبيب.",
+          "pleaseSelectSpecialization": "يرجى اختيار تخصص.",
+          "pleaseSelectDate": "يرجى اختيار تاريخ.",
+          "pleaseSelectConsultation": "يرجى اختيار استشارة.",
+          "appointmentSentSuccessfully": "تم إرسال الطلب بنجاح سيتم التواصل معك.",
+          "errorSubmittingAppointment": "حدث خطأ أثناء إرسال الموعد.",
 
           // home page
           'welcome' : 'مرحبا بك في مختبرات رويال التشخيصية',
@@ -552,9 +572,9 @@ i18n
 
            //  Services
 
-           'servicesp1' : 'الخدمة : تحليل دم',
-           'servicesp2' : 'التاريخ : 2/8/2024',
-           'servicesp3' : 'الخدمة : اكتملت',
+           'servicesp1' : 'الخدمة :  ',
+           'servicesp2' : 'التاريخ : ',
+           'servicesp3' : 'الخدمة : ',
 
            'updloadPdf' : 'تحميل pdf',
 
@@ -615,6 +635,13 @@ i18n
           'opt6' : 'تحليل الدواء',
 
           'serveBtnNow' : 'احجز الان!',
+          "pleaseEnterName": "يرجى إدخال الاسم",
+          "pleaseEnterAge": "يرجى إدخال العمر",
+          "pleaseEnterPhone": "يرجى إدخال رقم الهاتف",
+          "pleaseEnterDate": "يرجى إدخال التاريخ",
+          "pleaseSelectBranch": "يرجى اختيار الفرع",
+          "pleaseSelectService": "يرجى اختيار الخدمة",
+          "appointmentSentSuccussfuly": "تم إرسال طلبك بنجاح، سوف نقوم بالتواصل معك!",
 
           // doctor consultation
           'doctorConsultation' : 'استشارة الطبيب',
@@ -629,6 +656,7 @@ i18n
           'opt2specialization' : 'تحاليل',
           'opt3specialization' : 'امراض القلب',
           'requestBtnNow' : 'أرسل طلب',
+          'consultationType' : 'نوع الاستشارة',
 
           // Food analysis
           'foodAnalysis' : 'تحليل الغذاء' ,

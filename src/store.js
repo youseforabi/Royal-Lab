@@ -3,9 +3,15 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 import serviceReducer from "./features/servicesSlice"
+import branchesReducer from "./features/branchesSlice"
+import doctorReducer from "./features/doctorSlice"
+import consultationsReducer from "./features/consultationSlice"
 
 const rootReducer = combineReducers({
-  services: serviceReducer
+  services: serviceReducer,
+  branches: branchesReducer,
+  doctors: doctorReducer,
+  consultations: consultationsReducer,
 });
 
 const persistConfig = {
