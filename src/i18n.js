@@ -78,6 +78,7 @@ i18n
           'ElbahsAnTahalih' : 'Search for Tahalil',
           'UploadWasfa':'Upload a prescription',
           'Baqat' : 'Baqat',
+          'EGP' : 'EGP',
           // will change according the card
           'Enzem':'Phosphokinase enzyme',
           'heartEnzem':'Heart enzymes - requested  when feeling chest pain',
@@ -507,6 +508,7 @@ i18n
 
           'UploadWasfa' : 'تحميل وصفة طبية',
           'Baqat' : 'باقات',
+          'EGP' : 'جنيه مصري',
           // will change according the card
           'Enzem':'إنزيم فوسفو كينز',
           'heartEnzem':'انزيمات قلب - يتم طلبه عند الشعور بآلام بالصدر',
