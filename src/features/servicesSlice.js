@@ -10,15 +10,41 @@ const initialState = {
   services: null,
   notes: {},
   page: 1,
+  per_page: 20,
+  currentPage: 1,
+  totalPages: 1,
   error: null,
+  packages_status: 'idle',
+  packages_message: '',
+  packages_errors: [],
+  packages: null,
+  packages_notes: {},
+  packages_page: 1,
+  packages_per_page: 20,
+  packages_currentPage: 1,
+  packages_totalPages: 1,
+  packages_error: null,
 };
 
 // Async thunk for fetching services
 export const fetchServices = createAsyncThunk(
   'services/fetchServices',
-  async (page, thunkAPI) => {
+  async ({page, per_page}, thunkAPI) => {
     try {
-      const response = await axios.get(API + `/api/services/get-all-services?page=${page}`);
+      const response = await axios.get(API + `/api/services/get-services-pagination?page=${page}&per_page=${per_page}`);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
+// Async thunk for fetching packages
+export const fetchPackages = createAsyncThunk(
+  'services/fetchPackages',
+  async ({packages_page, packages_per_page}, thunkAPI) => {
+    try {
+      const response = await axios.get(API + `/api/services/get-packages-pagination?page=${packages_page}&per_page=${packages_per_page}`);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
@@ -28,31 +54,50 @@ export const fetchServices = createAsyncThunk(
 
 // Create the slice
 const servicesSlice = createSlice({
-    name: 'services',
-    initialState,
-    reducers: {
-      setPage: (state, action) => {
-        state.page = action.payload;
-      },
+  name: 'services',
+  initialState,
+  reducers: {
+    setPage: (state, action) => {
+      state.page = action.payload;
     },
-    extraReducers: (builder) => {
-      builder
-        .addCase(fetchServices.pending, (state) => {
-          state.status = 'loading';
-        })
-        .addCase(fetchServices.fulfilled, (state, action) => {
-          state.status = 'succeeded';
-          state.message = action.payload.message;
-          state.errors = action.payload.errors;
-          state.services = action.payload.data[0]; // Access the inner array
-          state.notes = action.payload.notes;
-        })
-        .addCase(fetchServices.rejected, (state, action) => {
-          state.status = 'failed';
-          state.error = action.payload || 'Failed to fetch services';
-        });
-    },
-  });
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchServices.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchServices.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.message = action.payload.message;
+        state.errors = action.payload.errors;
+        state.services = action.payload.data[0].data; // Access the inner array
+        state.totalPages = action.payload.data[0].last_page; // Access the inner array
+        state.currentPage = action.payload.data[0].current_page; // Access the inner array
+        state.notes = action.payload.notes;
+      })
+      .addCase(fetchServices.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.payload || 'Failed to fetch services';
+      })
+      .addCase(fetchPackages.pending, (state) => {
+        state.packages_status = 'loading';
+      })
+      .addCase(fetchPackages.fulfilled, (state, action) => {
+        state.packages_status = 'succeeded';
+        state.packages_message = action.payload.message;
+        state.packages_errors = action.payload.errors;
+        state.packages = action.payload.data[0].data; // Access the inner array
+        state.packages_totalPages = action.payload.data[0].last_page; // Access the inner array
+        state.packages_currentPage = action.payload.data[0].current_page; // Access the inner array
+        state.packages_notes = action.payload.notes;
+      })
+      .addCase(fetchPackages.rejected, (state, action) => {
+        state.packages_status = 'failed';
+        state.packages_error = action.payload || 'Failed to fetch packages';
+      });
+  },
+});
+
 // Export actions and reducer
 export const { setPage } = servicesSlice.actions;
 export default servicesSlice.reducer;
