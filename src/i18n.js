@@ -68,6 +68,8 @@ i18n
           'file' : 'File',
           'Name' : 'Name',
           'Phone' : 'Phone',
+          'email' :'Email',
+
           
 
 
@@ -497,6 +499,7 @@ i18n
           'file' : 'الملف',
           'Name' : 'الاسم',
           'Phone' : 'الجوال',
+          'email' :'البريد الالكتروني',
 
 
 
