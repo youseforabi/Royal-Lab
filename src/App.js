@@ -20,6 +20,7 @@
   import Profile from './Component/Profile/Profile';
   import { AppProvider } from './Context/userContext'; // Import AppProvider
   import { useContext, useEffect } from 'react';
+import Cart from './Component/Cart/Cart';
 
   // Define your routes
   const App = () => {
@@ -44,6 +45,7 @@
             <Route path="royal" element={<Royal />} />
             <Route path="doctor" element={<Doctor />} />
             <Route path="profile" element={<Profile/>} />
+            <Route path="cart" element={<Cart/>} />
             <Route path="foodAnalysis" element={<Food />} />
             <Route path="waterAnalysis" element={<Water />} />
             <Route path="pharmaAnalysis" element={<Pharmacy />} />

@@ -12,11 +12,14 @@
   right: 150px;
   display: flex;
   width: 80%;
+  z-index: 999; 
+
 }
 .layer{
   position: absolute;
-  background-color: #0000008d;
+  background-color: #0000008a;
   width: 100%;
+  z-index: 9; 
   height: 100%;
 }
 .welcome2 {
@@ -28,6 +31,8 @@
   right: 150px;
   display: flex;
   width: 80%;
+  z-index: 999; 
+
 }
 
 
@@ -47,6 +52,8 @@
   left: 150px;
   right: 150px;
   width: 10%;
+  z-index: 999; 
+
 }
 
 .buttonHome:hover {
@@ -76,6 +83,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 999; 
+
 }
 
 .icons i {

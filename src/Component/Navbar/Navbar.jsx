@@ -164,7 +164,11 @@ const Navbar = () => {
         {t('Switch Language')}
 
       </Nav.Link>
+
+
     </Nav> 
+    <Link class="fa-solid fa-cart-shopping d-flex justify-content-center align-items-center text-black text-decoration-none" to={'/cart'}></Link>
+
     
 
       </div>

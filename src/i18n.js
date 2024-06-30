@@ -430,6 +430,13 @@ i18n
                'Getsupportl3' : 'Check order status',
                'Getsupport4' : 'Refunds',
                'Getsupport5' : 'Report abuse',
+
+              //  Cart
+
+              'shoppingCart' : 'Shopping Cart',
+              'addMoreBaqat' : 'Add more Baqat / Tests',
+              'theAll' : 'Sum : Egyption Pound',
+              'payBtn' : 'Pay',
                     
 
           
@@ -764,6 +771,13 @@ i18n
              'Getsupportl3' : 'التحقق من حالة الطلب',
              'Getsupport4' : 'المبالغ المستردة',
              'Getsupport5' : 'بلغ عن سوء معاملة',
+
+
+            //  Cart
+             'shoppingCart' : 'عربية التسوق',
+              'addMoreBaqat' : 'اضف المزيد من الاختبارات / الباقات',
+              'theAll' : 'المجموع : جنيه مصري',
+              'payBtn' : 'ادفع',
 
 
             

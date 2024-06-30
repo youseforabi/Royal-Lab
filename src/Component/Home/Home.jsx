@@ -8,6 +8,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Styles from './Home.module.css';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
+import { Carousel } from 'react-bootstrap';
 
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -22,7 +23,54 @@ const Home = () => {
     <div dir={i18n.dir(i18n.language)}>
       <div className='position-relative'>
         <div className={Styles.layer}></div>
-        <img className='w-100' height={600} src="https://s3-alpha-sig.figma.com/img/3c4d/67c1/9692c73c9d23a3407ad6b2df32e28e52?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HCITkHr5E2blUUF2phF6~khiUZDB-f5aliJdgc7~Gx3CLog3OEKtAwsn2PCKo5kVKKohFtps2FEn4oqQJDvQVHNJJL-8lHJdO~KlOqc8EfloAdPKWl8Ri2nuwOS9dJa0~fo3GGZTTEOMOWWGkakbFyNQnpyipJh8XrjEXIcNSm0IaAmx42cQZd57oDaKkCLMEcQKteUgqGCbmDesGRD0SB6G0C-jDN8ghUkNaF~eyNb9rZFhohNR7SpP5qKjmNEg7QIovflafiNGm01~7rhDYz1CJi3ko8YTi4u5P~vxg1YHw1vlrZIbM9phlcfgSfZ23vEr5jjb-LMzp1L6sUH4Uw__" alt="Home image" />
+
+
+        
+        <Carousel 
+        controls={false}
+        interval={1500}
+        > 
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  src="https://as2.ftcdn.net/v2/jpg/01/36/40/63/1000_F_136406352_ti3nfF1Zs5iioMwB7QFoicmUXw4q4G7n.jpg"
+                  alt="Slide 1"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  src="https://as2.ftcdn.net/v2/jpg/01/36/86/99/1000_F_136869973_nf2llNAYQcnsnqOFx0JXkMHxH9uXEbHs.jpg"
+                  alt="Slide 1"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  src="https://as1.ftcdn.net/v2/jpg/01/37/14/18/1000_F_137141877_sGZV4s0SryGmrnfymp1qzt0xNLYfU3qC.jpg"
+                  alt="Slide 2"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  src="https://as2.ftcdn.net/v2/jpg/01/70/00/65/1000_F_170006526_B4foJEVWy2NwzAbQKURDrYN0ChCif3Gh.jpg"
+                  alt="Slide 3"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  src="https://as2.ftcdn.net/v2/jpg/00/83/47/27/1000_F_83472728_qdJuM2x77LFSeuftZ515jLuijRyM5Yzm.jpg"
+                  alt="Slide 3"
+                />
+              </Carousel.Item>
+            </Carousel>
         <h1 className={Styles.welcome}>{t('welcome')}</h1>
         <h1 className={Styles.welcome2}>{t('welcome2')}</h1>
         <Link className={`${Styles.buttonHome}`} to="/service">{t('buttonHome')}</Link>
@@ -87,7 +135,7 @@ const Home = () => {
           <div className="container">
           <div className="row justify-content-center">
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-              <Link className="col-md-2 text-decoration-none text-black" to={"./recipeMedical"}>
+              <Link className=" text-decoration-none text-black" to={"./recipeMedical"}>
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-capsules mb-3 fs-2"></i>
                 <h5 className="mt-2 text-center">{t('recipeMedical')}</h5>
@@ -102,7 +150,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-              <Link className="col-md-2 text-decoration-none text-black" to={'./homeVisit'}>
+              <Link className=" text-decoration-none text-black" to={'./homeVisit'}>
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-home mb-3 fs-2"></i>
                   <h5 className="mt-2 text-center">{t('homeVisit')}</h5>
@@ -122,7 +170,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-              <Link className="col-md-2 text-decoration-none text-black" to={'/doctor'}>
+              <Link className=" text-decoration-none text-black" to={'/doctor'}>
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-phone mb-3 fs-2"></i>
                 <h5 className="mt-2 text-center">{t('consultation')}</h5>
