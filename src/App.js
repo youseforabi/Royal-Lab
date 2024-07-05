@@ -54,9 +54,9 @@ const App = () => {
             <Route path="profile" element={isAuthentication ? <Profile /> : <Navigate to="/login" />} />
             <Route path="cart" element={isAuthentication ? <Cart /> : <Navigate to="/login" />} />
             <Route path="checkout" element={isAuthentication ? <Checkout /> : <Navigate to="/login" />} />
-            <Route path="foodAnalysis" element={isAuthentication ? <Food /> : <Navigate to="/login" />} />
-            <Route path="waterAnalysis" element={isAuthentication ? <Water /> : <Navigate to="/login" />} />
-            <Route path="pharmaAnalysis" element={isAuthentication ? <Pharmacy /> : <Navigate to="/login" />} />
+            <Route path="foodAnalysis" element={<Food /> } />
+            <Route path="waterAnalysis" element={<Water /> } />
+            <Route path="pharmaAnalysis" element={<Pharmacy />} />
           </Route>
           <Route path="/login" element={isAuthentication ? <Navigate to="/" /> : <Login />} />
           <Route path="/register" element={isAuthentication ? <Navigate to="/" /> : <Register />} />

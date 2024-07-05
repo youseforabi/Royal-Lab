@@ -336,8 +336,11 @@ i18n
 
           'serveBtnNow' : 'Book Now!',
           "pleaseEnterName": "Please enter a name",
+          "pleaseEnterEmail": "Please enter an email",
+          "pleaseEnterSubject": "Please enter message subject",
           "pleaseEnterAddress": "Please enter an address",
           "uploadYourCv": "Please upload your CV",
+          "requestReceived": "Your Request have recieved successfuly, we will contact you!",
           "pleaseEnterAge": "Please enter an age",
           "pleaseEnterPhone": "Please enter a phone number",
           "pleaseEnterDate": "Please enter a date",
@@ -711,6 +714,9 @@ i18n
 
           'serveBtnNow' : 'احجز الان!',
           "pleaseEnterName": "يرجى إدخال الاسم",
+          "pleaseEnterEmail": "يرجي ادخال البريد الاكتروني",
+          "pleaseEnterSubject": "يرجي ادخال محتوى الرسالة",
+          "requestReceived": "تم استقبال طلبك بنجاح سوف يتم التواصل معك",
           "pleaseEnterAddress": "يرجى إدخال العنوان",
           "uploadYourCv": "قم بارفاق ملف السيرة الذاتية الخاص بك",
           "pleaseEnterAge": "يرجى إدخال العمر",
