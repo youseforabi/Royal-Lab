@@ -175,6 +175,7 @@ const Navbar = () => {
 
       <Nav.Link className={`${Styles.navLink}  px-4 my-2`} as={Link} to="/results">{t('Results')}</Nav.Link>
       <Nav.Link className={`${Styles.navLink}  px-4 my-2`} as={Link} to="/reserve">{t('Reserve')}</Nav.Link>
+      <Nav.Link className={`${Styles.navLink}  px-4 my-2`} as={Link} to="/apply-for-job">{t('ApplyJob')}</Nav.Link>
 
       <Nav.Link className={`${Styles.navLink} px-4 my-2`} onClick={() => changeLanguage(i18n.language === 'en' ? 'ar' : 'en')}>
         {t('Switch Language')}

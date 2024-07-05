@@ -26,6 +26,7 @@ import Orders from './Component/Orders/Orders';
 import Appointment from './Component/AppointmentDetails/Appointment';
 import Appointments from './Component/Appointment/Appointments';
 import AboutUs from './Component/AboutUs/About';
+import ApplyJob from './Component/ApplyJob/ApplyJob';
 
 const App = () => {
   const { isAuthentication } = useAuth();
@@ -47,7 +48,8 @@ const App = () => {
             <Route path="homeVisit" element={isAuthentication ? <HomeVisit /> : <Navigate to="/login" />} />
             <Route path="about" element={<About />} />
             <Route path="about-us" element={<AboutUs />} />
-            <Route path="royal" element={isAuthentication ? <Royal /> : <Navigate to="/login" />} />
+            <Route path="royal" element={<Royal />} />
+            <Route path="apply-for-job" element={<ApplyJob />} />
             <Route path="doctor" element={isAuthentication ? <Doctor /> : <Navigate to="/login" />} />
             <Route path="profile" element={isAuthentication ? <Profile /> : <Navigate to="/login" />} />
             <Route path="cart" element={isAuthentication ? <Cart /> : <Navigate to="/login" />} />

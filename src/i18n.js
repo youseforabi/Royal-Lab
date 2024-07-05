@@ -25,6 +25,12 @@ i18n
           'Reserve' : 'Reserve',
           'Login' : 'Login',
           'Create Account' : 'Create Account',
+          'ApplyJob' :'Job Apply',
+          'Apply' :'Apply',
+          'chooseCv' :'Upload Your CV',
+          'applyForJob' :'Apply for job',
+          'recevidYourRequest' :'We have recieved your request successfully, will contact you',
+          'uploaded' :'Uploaded',
 
           // login page
           'LoginPage' : 'Login',
@@ -331,6 +337,7 @@ i18n
           'serveBtnNow' : 'Book Now!',
           "pleaseEnterName": "Please enter a name",
           "pleaseEnterAddress": "Please enter an address",
+          "uploadYourCv": "Please upload your CV",
           "pleaseEnterAge": "Please enter an age",
           "pleaseEnterPhone": "Please enter a phone number",
           "pleaseEnterDate": "Please enter a date",
@@ -500,6 +507,12 @@ i18n
           'AboutRoyal' : ' عن رويال',
           'Login' : 'تسجيل الدخول',
           'Create Account' :'انشاء حساب',
+          'ApplyJob' :'توظيف',
+          'Apply' :'تقديم',
+          'recevidYourRequest' :'تم استقبال طلبك بنجاح سيتم التواصل معك',
+          'uploaded' :'تم التحميل',
+          'chooseCv' :'ملف السيرة الذاتية',
+          'applyForJob' :'التقديم علي العمل',
 
           // login page
           'LoginPage' : 'تسجيل دخول',
@@ -699,6 +712,7 @@ i18n
           'serveBtnNow' : 'احجز الان!',
           "pleaseEnterName": "يرجى إدخال الاسم",
           "pleaseEnterAddress": "يرجى إدخال العنوان",
+          "uploadYourCv": "قم بارفاق ملف السيرة الذاتية الخاص بك",
           "pleaseEnterAge": "يرجى إدخال العمر",
           "pleaseEnterPhone": "يرجى إدخال رقم الهاتف",
           "pleaseEnterDate": "يرجى إدخال التاريخ",
