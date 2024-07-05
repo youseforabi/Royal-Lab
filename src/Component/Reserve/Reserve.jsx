@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { API } from '../../features/globals';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-toastify/dist/ReactToastify.css';
+import { api } from '../../API';
 
 const showSuccessMsg = (msg) => {
   toast.success(msg, {
@@ -29,17 +30,12 @@ const Reserve = () => {
   const isRTL = i18n.dir(i18n.language) === 'rtl';
   const [userData, setUserData] = useState(null);
   const [loader, setLoader] = useState(false);
-  const { userToken } = useContext(AppContext); // Assuming you have setUser and userToken in AppContext
   const currentLanguage = i18n.language;
 
   useEffect(() => {
     const getUserData = async () => {
       try {
-        const res = await axios.get('https://royal-lab.webbing-agency.com/api/user/get', {
-          headers: {
-            Authorization: `Bearer ${userToken}`
-          }
-        });
+        const res = await api.get('https://royal-lab.webbing-agency.com/api/user/get');
         if (res.data.status === true) {
           setUserData(res.data.data.user); 
           console.log(res.data.data.user);
@@ -50,7 +46,7 @@ const Reserve = () => {
     };
 
     getUserData();
-  }, [ userToken]);
+  }, []);
   
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -121,7 +117,7 @@ const Reserve = () => {
       setLoader(false);
     } else {
       try {
-        const res = await axios.post(API + "/api/appointments/place", {
+        const res = await api.post(API + "/api/appointments/place", {
           name: name,
           age: age,
           phone: phone,
@@ -130,7 +126,6 @@ const Reserve = () => {
           service_id: service_id,
         }, {
           headers: {
-            Authorization: `Bearer ${userToken}`,
             "Content-Type": "multipart/form-data",
           }
         });

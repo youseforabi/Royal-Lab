@@ -11,10 +11,15 @@ i18n
         translation: {
           // nav link
           'My app' : 'My app',
-          'Switch Language': 'English',
+          'Switch Language': 'العربي',
           'Home' : 'Home',
+          'Orders': 'My Orders',
+          'noOrders': 'There is no orders yet!',
+          'noAppointments': 'There is no appointments yet!',
+          'Visits': 'Hove visits',
+          'Appointments': 'Appointments',
           'Services' : 'Services',
-          'About' : 'About',
+          'About' : 'About Us',
           'Results' : 'Results',
           'Contact Us' : 'Contact Us',
           'Reserve' : 'Reserve',
@@ -57,6 +62,7 @@ i18n
           // 'tasaphah' : 'Browse Now!',
           'name' : 'Name*',
           'phone' : 'Phone Number*',
+          'address' : 'Address*',
           'Emailregister'  : 'Eamil*',
           'passwordRegister'  : 'Password*',
           'rePassword' : 'Password Confirm*',
@@ -88,6 +94,8 @@ i18n
           'price' : '250 egp',
           'addToCar':'Add To Cart',
           'tahalilhLists' : 'Tahalil Lists',
+          'services' : 'Services',
+          'finish' : 'Finish',
 
           // home page 
           'welcome' : 'Welcome to Royal Diagnostic Laboratories',
@@ -136,9 +144,13 @@ i18n
 
           // about Page 
           'aboutUs' : 'About Us',
+          'AboutRoyal' : 'About Royal',
           'firstPara' : 'The laboratory laboratories are considered the largest private medical laboratory companies in the Middle East region, providing diagnostic laboratory services and pathological tests to the medical community in the Kingdom of Saudi Arabia.',
           'readeBtn' :'Read More!',
           'ourVision' : 'Our Vision' ,
+          'aboutUsHeading' : 'Royal Diagnostic Laboratories' ,
+          'aboutUsParagraph1' : 'We strive to be graduates of medical laboratories that rely on the production of ions with modern development and technologies in the field of laboratory medical laboratories.',
+          'aboutUsParagraph2' : 'We strive to be graduates of medical laboratories that work on the final appearance of high-quality laboratory services that are in line with community requirements and keep up with the latest details.' ,
           'secPara' : 'Our vision is to be the recognized leader in the field of laboratory medicine in the Middle East.',
           'after' : 'This vision is achieved through:' ,
           'firstLi' : 'The commitment of our leaders and employees to our mission and core values.',
@@ -189,6 +201,20 @@ i18n
          
 
           'serveBtnNow' : 'Book Now!',
+          'servicePrice' : 'Service Price' ,
+          'recipientName' : "Recipient's Name" ,
+          'recipientPhone' : "Recipient's Phone" ,
+          'recipientAddress' : "Recipient's Address" ,
+          'orderDate' : "Order Date" ,
+          'appointmentDate' : "Appointment Date" ,
+          'appointmentStatus' : "Appointment Status" ,
+          'branch' : "Branch" ,
+          'appointmentDetails' : "Appointment Details" ,
+          'orderStatus' : "Order Status" ,
+          'under_review' : "Reviewing" ,
+          'confirmed' : "Confirmed" ,
+          'completed' : "Completed" ,
+          'canceld' : "Canceled" ,
 
           // doctorConsultation
           'doctorConsultation' : 'Doctor Consultation',
@@ -298,17 +324,20 @@ i18n
           'opt4' : 'Blood result',
           'opt5' : 'Food Result',
           'opt6' : 'Medicine Result',
-
+          'orderDetails' : 'Order Details' ,
+          'service' : 'Service Name' ,
          
 
           'serveBtnNow' : 'Book Now!',
           "pleaseEnterName": "Please enter a name",
+          "pleaseEnterAddress": "Please enter an address",
           "pleaseEnterAge": "Please enter an age",
           "pleaseEnterPhone": "Please enter a phone number",
           "pleaseEnterDate": "Please enter a date",
           "pleaseSelectBranch": "Please select a branch",
           "pleaseSelectService": "Please select a service",
           "appointmentSentSuccussfuly": "Your appointment have sent successfuly, We will contact you!",
+          "orderSuccess": "Order placed successfuly!",
           // doctorConsultation
           'doctorConsultation' : 'Doctor Consultation',
           // 'Date' : 'Date',
@@ -435,8 +464,9 @@ i18n
 
               'shoppingCart' : 'Shopping Cart',
               'addMoreBaqat' : 'Add more Baqat / Tests',
-              'theAll' : 'Sum : Egyption Pound',
-              'payBtn' : 'Pay',
+              'theAll' : 'Total : ',
+              'payBtn' : 'Checkout',
+              'checkout' : 'Checkout',
                     
 
           
@@ -455,13 +485,19 @@ i18n
         translation: {
           // nav link
           'My app' : 'موقعي',
-          'Switch Language': 'العربية',
+          'Switch Language': 'English',
+          'Orders': 'طلباتي',
+          'noOrders': 'لا يوجد طلبات حتى الان!',
+          'noAppointments': 'لا يوجد حجوزات حتى الان!',
+          'Appointments': 'المواعيد',
+          'Visits': 'الزيارات',
           'Home' : 'الرئيسية',
           'Services' : 'الخدمات',
           'Results' : 'النتائج',
           'Contact Us' : 'تواصل معنا',
           'Reserve' : 'احجز موعد',
-          'About' : ' عن المعمل',
+          'About' : ' من نحن',
+          'AboutRoyal' : ' عن رويال',
           'Login' : 'تسجيل الدخول',
           'Create Account' :'انشاء حساب',
 
@@ -471,6 +507,21 @@ i18n
           'errorMsgLogin'  :'كلمة مرور خاطئة' ,
           'logOut' : 'تسجيل خروج',
           'pls' :'سجل دخولك اولا',
+          'service' : 'اسم الخدمة' ,
+          'servicePrice' : 'سعر الخدمة' ,
+          'recipientName' : "اسم المستلم" ,
+          'recipientPhone' : "هاتف المستلم" ,
+          'appointmentDate' : "تاريخ الحجز" ,
+          'appointmentStatus' : "حالة الحجز" ,
+          'appointmentDetails' : "تفاصيل الحجز" ,
+          'recipientAddress' : "عنوان المستلم" ,
+          'orderDate' : "تاريخ الطلب" ,
+          'orderStatus' : "حالة الطلب" ,
+          'branch' : "الفرع" ,
+          'under_review' : "تحت المراجعة" ,
+          'confirmed' : "تم التاكيد" ,
+          'completed' : "اكتمل" ,
+          'canceld' : "فشل او الغي" ,
 
           // there is contact us in the navbar and here
           // 'Contact Us' : 'تواصل معنا',
@@ -520,6 +571,7 @@ i18n
           'Name' : 'الاسم',
           'age' : 'العمر',
           'Phone' : 'الجوال',
+          'address' : 'العنوان*',
           'email1' :'البريد',
 
 
@@ -593,6 +645,9 @@ i18n
 
           // about Page
           'aboutUs' : 'عن المختبر',
+          'aboutUsHeading' : 'مختبرات رويال التشخيصية' ,
+          'aboutUsParagraph1' : 'نسعى جاهدين إلى أن تكون خريجات ​​المختبرات الطبية التي تعتمد على إنتاج الأيونات بالتطوير والتقنيات الحديثة في مجال المختبرات الطبية المخبريه.',
+          'aboutUsParagraph2' : 'نسعى مجاهدين إلى أن نكون خريجي المختبرات الطبية التي تعمل علي المظهر النهائي خدمات مخبرية عالية الجودة تتماشى مع متطلبات المجتمع ومواكبة آخر التفاصيل.' ,
           'firstPara' : 'تعتبر معامل المختبر هي أكبر شركات المختبرات الطبية الخاصة في منطقة الشرق الأوسط، التي توفر خدمات المختبرات التشخيصية والاختبارات الباثولوجية للأوساط الطبية في المملكة العربية السعودية.',
           'readeBtn' :'اقرأ المزيد !',
           
@@ -643,12 +698,14 @@ i18n
 
           'serveBtnNow' : 'احجز الان!',
           "pleaseEnterName": "يرجى إدخال الاسم",
+          "pleaseEnterAddress": "يرجى إدخال العنوان",
           "pleaseEnterAge": "يرجى إدخال العمر",
           "pleaseEnterPhone": "يرجى إدخال رقم الهاتف",
           "pleaseEnterDate": "يرجى إدخال التاريخ",
           "pleaseSelectBranch": "يرجى اختيار الفرع",
           "pleaseSelectService": "يرجى اختيار الخدمة",
           "appointmentSentSuccussfuly": "تم إرسال طلبك بنجاح، سوف نقوم بالتواصل معك!",
+          "orderSuccess": "تم ارسال الطلب بنجاح !",
 
           // doctor consultation
           'doctorConsultation' : 'استشارة الطبيب',
@@ -657,6 +714,7 @@ i18n
           'nameDoctor2' : 'د / خالد محمد' , 
           'nameDoctor3' : 'د / أحمد علي' , 
           'kind' : 'استشارة عبر الانترنت' ,
+          'orderDetails' : 'تفاصيل الطلب' ,
           // 'Date' : 'الموعد',
           'specialization' : 'التخصص',
           'opt1specialization' : 'مخ وأعصاب',
@@ -776,9 +834,11 @@ i18n
             //  Cart
              'shoppingCart' : 'عربية التسوق',
               'addMoreBaqat' : 'اضف المزيد من الاختبارات / الباقات',
-              'theAll' : 'المجموع : جنيه مصري',
-              'payBtn' : 'ادفع',
-
+              'theAll' : 'المجموع : ',
+              'payBtn' : 'اكمل الطلب',
+              'checkout' : 'اكمال الطلب',
+              'services' : 'الخدمات',
+              'finish' : 'اطلب',
 
             
 

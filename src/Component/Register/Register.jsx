@@ -4,8 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import { useFormik } from 'formik/dist';
 import axios from 'axios';
+import { setCredentials } from '../../features/auth/authSlice';
+import { useDispatch } from 'react-redux';
+import logo from '../../imgs/logo.png'
+
 const Register = () => {
   let navigate = useNavigate()
+  const dispatch = useDispatch();
 
   const [errMsg , setErrorMsg] = useState('')
   const [loading , setLoading] = useState(true)
@@ -16,8 +21,9 @@ const Register = () => {
    .then(  (res) =>{
     console.log(res);
     if (res.data.status == true) {
+      dispatch(setCredentials(res.data));
 
-      navigate('/login'); // Navigate to login page upon successful registration
+      navigate('/'); // Navigate to login page upon successful registration
     }
     setErrorMsg(res.data.message); // Set the error message state based on API response
 
@@ -116,7 +122,7 @@ const Register = () => {
         <div className='col-md-4'>
 
             <div className='d-flex justify-content-end pt-3'>
-              <img className={`${Styles.registerImage}`} src="https://s3-alpha-sig.figma.com/img/c9f2/1532/92806cf6a99896c4e83cd8212d1b5593?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g0yk1oq7zMqMGTSVRNMB4aHF0j3k9hPnoa-0M-zQDJaLiS4B93XtVsrWTbX6pOYQOapSUnMGHzIg-nADRYOW7lyQpb0Kc1vJDWz7gNJlQT9UfhusDCdnxc2Gf5nwAmfnQEDvUFhodiICtoJP4O8ydob-yscRJrnEX1UJy15xA0rzzF1Bj-9sPtCWZV24fkVPEBooonW89ICPiHRYbWw1zzwJQp5DpcwPFaDwgCRrFxU4H-BQGZAnvCnACy71eEEWOOmPZ563XMcONTAocId1hmBy4awl4-m00vumUU-2~4O4Sgdhk2TmJGODA5i00PSpG~YklqW2VaR3upLmeY0~hA" alt="LoginLogo" />
+              <img className={`${Styles.registerImage} mx-3`} src={logo} alt="LoginLogo" />
             </div>
 
            <div className=' h-75 d-flex flex-column py-2'>

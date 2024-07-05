@@ -34,6 +34,7 @@ const Home = () => {
                 <img
                   className='d-block w-100'
                   height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
                   src="https://as2.ftcdn.net/v2/jpg/01/36/40/63/1000_F_136406352_ti3nfF1Zs5iioMwB7QFoicmUXw4q4G7n.jpg"
                   alt="Slide 1"
                 />
@@ -42,6 +43,7 @@ const Home = () => {
                 <img
                   className='d-block w-100'
                   height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
                   src="https://as2.ftcdn.net/v2/jpg/01/36/86/99/1000_F_136869973_nf2llNAYQcnsnqOFx0JXkMHxH9uXEbHs.jpg"
                   alt="Slide 1"
                 />
@@ -50,6 +52,7 @@ const Home = () => {
                 <img
                   className='d-block w-100'
                   height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
                   src="https://as1.ftcdn.net/v2/jpg/01/37/14/18/1000_F_137141877_sGZV4s0SryGmrnfymp1qzt0xNLYfU3qC.jpg"
                   alt="Slide 2"
                 />
@@ -58,6 +61,7 @@ const Home = () => {
                 <img
                   className='d-block w-100'
                   height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
                   src="https://as2.ftcdn.net/v2/jpg/01/70/00/65/1000_F_170006526_B4foJEVWy2NwzAbQKURDrYN0ChCif3Gh.jpg"
                   alt="Slide 3"
                 />
@@ -66,6 +70,7 @@ const Home = () => {
                 <img
                   className='d-block w-100'
                   height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
                   src="https://as2.ftcdn.net/v2/jpg/00/83/47/27/1000_F_83472728_qdJuM2x77LFSeuftZ515jLuijRyM5Yzm.jpg"
                   alt="Slide 3"
                 />
@@ -82,9 +87,11 @@ const Home = () => {
           <div className={Styles.icons} style={{ [isRTL ? 'left' : 'right']: '200px', [isRTL ? 'right' : 'left']: 'auto' }}>
               <i className="fa-brands fa-facebook"></i>
               <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-whatsapp"></i>
               <i className="fa-brands fa-linkedin"></i>
               <i className="fa-solid fa-location-dot"></i>
+          </div>
+          <div className={Styles.fixedSocial}>
+              <i className="fa-brands fa-whatsapp"></i>
               <i className="fa-solid fa-phone"></i>
           </div>
         </div>
@@ -92,7 +99,7 @@ const Home = () => {
 
     
     <div className="d-flex justify-content-center">
-        <ul className="nav nav-tabs" id="myTab" role="tablist">
+        <ul className="nav nav-tabs  mt-4" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <button
               className="nav-link active"

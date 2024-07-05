@@ -11,6 +11,7 @@ import axios from 'axios';
 import { API } from '../../features/globals';
 import 'react-toastify/dist/ReactToastify.css';
 import { AppContext } from '../../Context/userContext';
+import { api } from '../../API';
 
 const showSuccessMsg = (msg) => {
   toast.success(msg, {
@@ -29,7 +30,6 @@ const Doctor = () => {
   const isRTL = i18n.dir(i18n.language) === 'rtl';
   const [selectedDate, setSelectedDate] = useState(null); // State to store selected date/time
   const currentLanguage = i18n.language;
-  const { userToken } = useContext(AppContext); // Assuming you have setUser and userToken in AppContext
   const [loader, setLoader] = useState(false);
 
   const [doctor, setDoctor] = useState(null);
@@ -81,23 +81,18 @@ const Doctor = () => {
       setLoader(false)
     } else {
       try {
-        const res = await axios.post(API + "/api/medical_consultations/place", {
+        const res = await api.post(API + "/api/medical_consultations/place", {
           doctor_id: doctor,
           specialization_id: specialization,
           date: selectedDate,
           consultation_id: consultation,
-        }, {
-          headers: {
-            Authorization: `Bearer ${userToken}`,
-            "Content-Type": "application/json",
-          }
         });
         
         setLoader(false)
         if (res.data.status === true) {
           showSuccessMsg(t("appointmentSentSuccessfully"));
           setTimeout(() => {
-            window.location.reload();
+            window.location.href = ("/appointment/" + res.data.data[0].id)
           }, 2000);
         }
       } catch (err) {

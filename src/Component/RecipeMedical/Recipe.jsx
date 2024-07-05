@@ -6,6 +6,7 @@ import axios from 'axios';
 import { AppContext } from '../../Context/userContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { api } from '../../API';
 
 const showSuccessMsg = (msg) => {
   toast.success(msg, {
@@ -26,7 +27,6 @@ const Recipe = () => {
   const [previewUrl, setPreviewUrl] = useState(null); // New state for preview URL
   const [notes, setNotes] = useState("");
   const [loader, setLoader] = useState(false);
-  const { userToken } = useContext(AppContext);
 
   const handleChangeFile = (e) => {
     const file = e.target.files[0];
@@ -53,9 +53,8 @@ const Recipe = () => {
       try {
         const formData = new FormData();
         formData.append('file', file);
-        const res = await axios.post(API + "/api/prescription/put", formData, {
+        const res = await api.post(API + "/api/prescription/put", formData, {
           headers: {
-            Authorization: `Bearer ${userToken}`,
             "Content-Type": "multipart/form-data",
           }
         });

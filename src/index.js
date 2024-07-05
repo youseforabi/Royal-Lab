@@ -7,10 +7,12 @@ import { TranslationProvider } from './Component/TranslataionContext'; // Adjust
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { AppProvider } from './Context/userContext';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import store, { persistor } from './store';
+import { setupInterceptors } from './API';
+
+setupInterceptors(store)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

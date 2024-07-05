@@ -13,7 +13,7 @@
   display: flex;
   width: 80%;
   z-index: 999; 
-
+  font-weight: 700;
 }
 .layer{
   position: absolute;
@@ -32,6 +32,7 @@
   display: flex;
   width: 80%;
   z-index: 999; 
+  font-weight: 700;
 
 }
 
@@ -39,7 +40,7 @@
 .buttonHome {
   background-color: white;
   color: rgba(179, 147, 48, 1);
-  padding: 10px 15px;
+  padding: 12px 40px;
   border-radius: 8px;
   transition: all 1s;
   text-decoration: none;
@@ -51,9 +52,37 @@
   top: 400px;
   left: 150px;
   right: 150px;
-  width: 10%;
   z-index: 999; 
+  font-weight: 500;
+  font-size: 22px;
+  width: max-content;
+}
 
+.fixedSocial {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.fixedSocial i {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  color: #B39330;
+  border: 1px solid #B39330;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  z-index: 99;
+  position: relative;
 }
 
 .buttonHome:hover {
@@ -84,13 +113,13 @@
   align-items: center;
   flex-direction: column;
   z-index: 999; 
-
+  gap: 4px;
 }
 
 .icons i {
-  font-size: 24px;
+  font-size: 32px;
   margin-right: 10px;
-  color: #B39330;
+  color: #fff;
   padding-bottom: 15px;
   cursor: pointer;
 }
@@ -330,3 +359,42 @@ span {
 }
 
 
+
+@media (max-width: 767.98px) {
+  .welcome {
+    text-align: center;
+    font-size: 17px;
+  }
+  .welcome2 {
+    font-size: 17px;
+    text-align: center !important;
+    line-height: 20px;
+    top: 87px !important;
+  }
+  .buttonHome {
+    top: 130px !important;
+    font-size: 18px;
+    padding: 7px 22px !important;
+    width: max-content;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+  }
+  .icons {
+    top: 170px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: revert;
+    justify-content: center;
+    align-items: center;
+    left: 0 !important;
+    right: auto !important;
+    gap: 4px;
+  }
+  .icons i {
+    font-size: 22px;
+  }
+  .cardHome {
+    height: 160px;
+  }
+}

@@ -7,6 +7,21 @@ import { API } from '../../features/globals';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
+import { addProductToCart, setMsgs } from '../../features/cartSlice';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const showSuccessMsg = (msg) => {
+  toast.success(msg, {
+    position: 'top-right',
+  });
+};
+
+const showErrorMessage = (msg) => {
+  toast.error(msg, {
+    position: 'top-right',
+  });
+};
+
 
 
 const Services = () => {
@@ -15,6 +30,9 @@ const Services = () => {
 
   const dispatch = useDispatch();
   const services = useSelector((state) => state.services.services);  
+  const cart = useSelector((state) => state.cart.cart);  
+  const cartSuccessMsg = useSelector((state) => state.cart.message);  
+  const cartErrorMsg = useSelector((state) => state.cart.errorMsg);  
   const totalPages = useSelector((state) => state.services.totalPages);  
   const currentPage = useSelector((state) => state.services.currentPage);  
   const search_results = useSelector((state) => state.services.search_results);  
@@ -41,16 +59,31 @@ const Services = () => {
     handleChangeSearch(1)
   };
 
+  const handleAddProductToCart = (id) => {
+    dispatch(addProductToCart(id));
+  }
+
   useEffect(() => {
     dispatch(fetchServices({page: 1, per_page: 20}));
     dispatch(fetchPackages({packages_page: 1, packages_per_page: 20}));
-    console.log(packages);
+    console.log(cart);
   }, [dispatch]);
   
 
+  useEffect(() => {
+    if (cartSuccessMsg) {
+      showSuccessMsg(cartSuccessMsg)
+      dispatch(setMsgs())
+    }
+    if (cartErrorMsg) {
+      showErrorMessage(cartErrorMsg)
+      dispatch(setMsgs())
+    }
+  }, [cartErrorMsg, cartSuccessMsg]);
+  
   return (
     <div dir={i18n.dir(i18n.language)}>
-
+    <ToastContainer />
     <div className=''>
      <h1 className={`${Styles.main} mt-4`}>{t('tahalilAndBaqat')}</h1>
 
@@ -94,7 +127,7 @@ const Services = () => {
                     <p>{service.price + " " + t("EGP")}</p>
 
 
-                    <button className={`${Styles.buttonCart} my-3`}>{t('addToCar')}</button>
+                    <button className={`${Styles.buttonCart} my-3`} onClick={() => handleAddProductToCart(service.id)}>{t('addToCar')}</button>
 
                   </div>
 
@@ -133,7 +166,7 @@ const Services = () => {
                           <p>{service.price + " " + t("EGP")}</p>
 
 
-                          <button className={`${Styles.buttonCart} my-3`}>{t('addToCar')}</button>
+                          <button className={`${Styles.buttonCart} my-3`} onClick={() => handleAddProductToCart(service.id)}>{t('addToCar')}</button>
 
                         </div>
 
@@ -174,7 +207,7 @@ const Services = () => {
                           <p>{service.price + " " + t("EGP")}</p>
 
 
-                          <button className={`${Styles.buttonCart} my-3`}>{t('addToCar')}</button>
+                          <button className={`${Styles.buttonCart} my-3`} onClick={() => handleAddProductToCart(service.id)}>{t('addToCar')}</button>
 
                         </div>
 

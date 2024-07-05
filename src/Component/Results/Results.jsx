@@ -7,13 +7,13 @@ import { API } from '../../features/globals';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
+import { api } from '../../API';
 
 const Results = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir(i18n.language) === 'rtl';
   const currentLanguage = i18n.language;
   
-  const { userToken } = useContext(AppContext); // Assuming you have setUser and userToken in AppContext
   const [results, setResults] = useState([])
   const [totalPages, setTotal] = useState(1);  
   const [currentPage, setPage] = useState(1);  
@@ -23,11 +23,7 @@ const Results = () => {
   useEffect(() => {
     const getUserData = async () => {
       try {
-        const res = await axios.get('https://royal-lab.webbing-agency.com/api/user/results', {
-          headers: {
-            Authorization: `Bearer ${userToken}`
-          }
-        });
+        const res = await api.get('https://royal-lab.webbing-agency.com/api/user/results');
         if (res.data.status === true) {
           console.log(res.data.data);
           setResults(res.data.data.data)
@@ -45,15 +41,11 @@ const Results = () => {
     };
 
     getUserData();
-  }, [ userToken]);
+  }, []);
 
   const handleChange = async (value) => {
     try {
-      const res = await axios.get(`https://royal-lab.webbing-agency.com/api/user/results?page=${value}`, {
-        headers: {
-          Authorization: `Bearer ${userToken}`
-        }
-      });
+      const res = await api.get(`https://royal-lab.webbing-agency.com/api/user/results?page=${value}`);
       if (res.data.status === true) {
         setResults(res.data.data.data)
         setTotal(res.data.data.last_page)
