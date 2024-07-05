@@ -53,7 +53,7 @@ body{
   direction: ltr;
 }
 
-@media (max-width: 767.98) {
+@media (max-width: 767.98px) {
   
   .carousel-item img{
     max-height: 250px !important;
