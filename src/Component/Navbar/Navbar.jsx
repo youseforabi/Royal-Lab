@@ -73,7 +73,7 @@ const Navbar = () => {
                       <img className='w-100' src={profile} alt="logoProfile" style={{cursor: 'pointer'}} onClick={() => setShowPopUp(!showPopUp)}/>
                       <Link class="fa-solid fa-cart-shopping d-flex justify-content-center align-items-center text-black text-decoration-none" to={'/cart'} style={{ fontSize: "20px", position: 'relative'}} >
                         {
-                          (cart && cart.products.length > 0) && (
+                          (cart && cart.products && cart.products.length > 0) && (
                             <span className={Styles.cartDot}>
                               {cart.products.length > 99 ? "+99" : cart.products.length}
                             </span>
