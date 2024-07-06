@@ -20,24 +20,29 @@ const About = () => {
       <div className={`${Styles.first} mx-auto`}>
         <h1>{t('ourVision')}</h1>
         <p className={Styles.secPara}>{t('secPara')}</p>
-        <p className={Styles.secPara}>{t('after')}</p>
-        <ul>
-          <li>{t('firstLi')}</li>
-          <li>{t('secondLi')}</li>
-          <li>{t('theThirdLi')}</li>
-        </ul>
+   
       </div>
 
       <div className={`${Styles.first} mx-auto`}>
-        <h1>{t('ourMission')}</h1>
-        <p className={Styles.thirdPara}>{t('thirdPara')}</p>
-        <p className={Styles.thirdPara}>{t('after')}</p>
+        <h1>{t('ourMsg')}</h1>
+        <p className={Styles.secPara}>{t('ourMsg1')}</p>
+   
+      </div>
+
+      <div className={`${Styles.first} mx-auto`}>
+        <h1>{t('ourValue')}</h1>
+        <p className={Styles.secPara}>{t('ourValue1')}</p>
+   
+      </div>
+
+      <div className={`${Styles.first} mx-auto`}>
+        <h1>{t('Ourgoals')}</h1>
         <ul>
-          <li>{t('firLi')}</li>
-          <li>{t('secLi')}</li>
-          <li>{t('thirdLi')}</li>
-          <li>{t('fourthLi')}</li>
-          <li>{t('fifthLi')}</li>
+          <li>{t('Ourgoals1')}</li>
+          <li>{t('Ourgoals2')}</li>
+          <li>{t('Ourgoals3')}</li>
+          <li>{t('Ourgoals4')}</li>
+          <li>{t('Ourgoals5')}</li>
         </ul>
       </div>
     </div>

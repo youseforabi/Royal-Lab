@@ -113,14 +113,20 @@ i18n
           'araClients' : 'Clients Opinion',
           'torki' : 'Torki abdelrahman',
           'lorem' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-          'technical' : 'technical Support',
+
+          'technical' : 'Basic Royal Packages',
+          'technical2' : 'Royal specialty packages',
+          'technical3' : 'Corporate and home care packages',
+
+          
+
           'techLorem' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
           'waterAnalysis':'Water Analysis',
           'pharmaAnalysis' : 'Pharma Analysis',
           'recipeMedical' : 'Recipe Medical',
           'chooseFileRecipe' : 'Please Uploade file',
           'fileUploadedSuccessfully' : 'The prescription has been sent successfully. We will contact you',
-          'bloodAnalysis' : 'Blood Analysis',
+          'bloodAnalysis' : 'Medical tests',
           'homeVisit':'Home Visit',
           'Branches':'Branches',
           'Insurances':'Insurances',
@@ -149,15 +155,32 @@ i18n
           'reserverNow' : 'Reserver Now!',
 
           // about Page 
-          'aboutUs' : 'About Us',
-          'AboutRoyal' : 'About Royal',
-          'firstPara' : 'The laboratory laboratories are considered the largest private medical laboratory companies in the Middle East region, providing diagnostic laboratory services and pathological tests to the medical community in the Kingdom of Saudi Arabia.',
+          'aboutUs' : 'About Royal Laboratories',
+          // 'AboutRoyal' : 'About Royal Laboratories',
+          'firstPara' : 'Royal Diagnostic Laboratories is one of the private medical laboratories in the Kingdom of Saudi Arabia, which provides diagnostic laboratory services and pathological tests to the medical community in the Kingdom of Saudi Arabia.',
           'readeBtn' :'Read More!',
           'ourVision' : 'Our Vision' ,
           'aboutUsHeading' : 'Royal Diagnostic Laboratories' ,
           'aboutUsParagraph1' : 'We strive to be graduates of medical laboratories that rely on the production of ions with modern development and technologies in the field of laboratory medical laboratories.',
+          'docName' : 'Dr. Ahmed Mohamed Hegazy ',
+          'doc1':'Assistant Professor of Hematology & Blood Transfusion at Prince Sattam bin Abdulaziz University.',
+          'doc121':'Laboratory medicine consultant.',
+          'doc2':'Associate clinical research fellow at King Abdullah International Medical Research Center - National Guard.',
+          'doc3':'Founder & CEO of Royal Laboratories.   ',
+          'doc4':'CEO of the Saudi Society for Coagulation Research.',
+          'doc5':'He holds a master’s degree in blood, organ and stem cell transfusion medicine from the University of Bristol, Britain',
+          'doc6':'Doctorate in Clinical Medicine (specializing in Hematology and Immunology) from Imperial College London, in cooperation under supervision with the University of Oxford - Britain.',
+          'doc7':'Higher Education Fellowship - Britain.',
+          'doc8':'He has more than 100 research papers published in highly rated, peer-reviewed journals internationally.',
+          'doc9':'Editor in a number of international scientific journals.',
+          'doc10':'An international Saudi speaker at many of the world’s leading conferences in the same specialty',
+
+
+
+
+
           'aboutUsParagraph2' : 'We strive to be graduates of medical laboratories that work on the final appearance of high-quality laboratory services that are in line with community requirements and keep up with the latest details.' ,
-          'secPara' : 'Our vision is to be the recognized leader in the field of laboratory medicine in the Middle East.',
+          'secPara' : 'Expanding the scope of our services throughout the Kingdom with high quality and improving services.',
           'after' : 'This vision is achieved through:' ,
           'firstLi' : 'The commitment of our leaders and employees to our mission and core values.',
           'secondLi' : 'Providing the ideal environment during the work environment.',
@@ -170,12 +193,25 @@ i18n
           'fourthLi' : 'Acquire, disseminate and apply knowledge through the innovative use of technology.',
           'fifthLi' : 'Create and expand collaborative professional partnerships.',
 
+          'ourMsg' : 'Our message' ,
+          'ourMsg1' : 'Providing distinguished medical diagnostic laboratory services of high quality' ,
+          
+          'ourValue' : 'Our Value' ,
+          'ourValue1' : 'Safety - High quality - Loyalty - Efficiency - Continuous development' ,
+
+          'Ourgoals' : 'Our goals',
+          'Ourgoals1' : 'Expanding patient access through innovation in Saudi Arabia',
+          'Ourgoals2' : 'Obtaining local and international accreditations for all branches',
+          'Ourgoals3' : 'Introducing innovative tests, services and sections',
+          'Ourgoals4' : 'To develop process improvement projects',
+          'Ourgoals5' : 'Improving the performance of the administrative, medical and technical team',
+
           // Royal Page
  
-          'p1' : 'Laboratories is considered one of the largest private medical laboratory companies in the Middle East, which provides diagnostic laboratory services and pathological tests for medical drugs in the Kingdom of Saudi Arabia.',
-          'p2' : 'The company offers a range of more than 1,400 analyzes in the fields of immunology, hematology/coagulation, diagnostic blood chemistry, parasitology, microbiology/infectious diseases, toxicology, cytology, surgical pathology, flow cytometry, molecular biology and genetics. Cellular. Samples are collected in more than 214 branches covering the governorates of all regions in Egypt, and analyzes are performed in the main laboratory in addition to the central laboratories in the main governorates in Egypt.',
-          'p3' : 'The company was established in 1979 as a single laboratory by Professor Dr. Moumina Kamel - Professor of Immunology at the College of Medicine, University of Dammam.',
-          'p4' : 'The company was established in 1979 as a single laboratory by Professor Dr. Moamena Kamel - Professor of Immunology at the Faculty of Medicine, Cairo University. Today the laboratory is considered the largest chain of medical laboratories, especially with the renewed trend towards expansion. Over 40 years. Laboratory laboratories have gained a lot of knowledge about your needs and expectations during their 40 years of leadership in the field of medical analysis, and for this reason, laboratory laboratories follow quality standards on all fronts and are therefore the only laboratories to obtain CAP in Egypt since 2010, which is considered... The gold standard for medical laboratory accreditation, which means that the accuracy of laboratory results is guaranteed and similar results are obtained from all CAP-accredited laboratories around the world.',
+          'p1' : 'The company offers a range of more than 1,400 analyzes in the fields of immunology, hematology/coagulation, diagnostic blood chemistry, parasitology, microbiology/infectious diseases, toxicology, cytology, surgical pathology, flow cytometry, molecular biology and genetics. Cellular.',
+          'p2' : 'The laboratory was established in 2024 by Professor Dr. Ahmed Mohamed Hegazy.',
+          'p3' : 'Assistant Professor of Hematology & Blood Transfusion at Prince Sattam bin Abdulaziz University.',
+          'p4' : 'In addition, we have the ability to draw samples and deliver the results to and from your location, and also provide your test results for free, on our website. We constantly strive to exceed your expectations and fulfill our promises because we truly care from the heart.',
           'p5' : 'Royal Laboratories represents the largest network in Saudi Arabia with more than 218 branches nationwide, and selection of the best cadres to work in laboratory laboratories is also taken into consideration, both at the administrative and technical levels. The laboratory laboratories are considered the first medical laboratory in Egypt to use “work cell” technology, which is the latest technology in medical laboratory technology, and thus human errors are reduced to a minimum.',
           'p6' : 'In addition to that, we have the ability to draw samples and deliver the results to and from your location, as well as provide your test results for free, on our website. We constantly strive to exceed your expectations and fulfill our promises because we truly care from the heart.',
           'readLess' : 'Read Less!',
@@ -451,6 +487,41 @@ i18n
                'TradeAssurance' : 'Trade Assurance',
                'TradeAssuranceli1' : 'Safe and easy payments',
                'TradeAssuranceli2' : 'Return Policy',
+               'returnPlicy' : 'Return policy for Royal Diagnostic Laboratories ',
+            'returnPoliy1':'Refunds will be made within 3 days from the date of the invoice, provided that the original invoice is presented.',
+
+            'returnPoliy2':'Exchange policy',
+            'returnPoliy3':'Replacement of services within one month from the date of the invoice.',
+            'returnPoliy4':'Replacement policy.',
+            'returnPoliy5':'1- Without prejudice to the contractual and statutory provisions of the warranty, the consumer has the right to replace the product provided to him by the store within the seven days following the date of receipt of the product, and he is not entitled to replace the product after the seven days have passed.',
+            'returnPoliy6':'2- To replace a product, it is required that the product be in good condition and that the consumer has not used the product or obtained any benefit from it. The store has the right to inspect the product before exchanging it to ensure its safety. The consumer is responsible for paying the shipping cost if he wants to exchange the product. In international exchange, the consumer bears the full costs of shipping and delivering the product to the shipping company. In the event of defects or errors, the consumer will be compensated',
+            'returnPoliy7':'The consumer does not have the right to replace the product in the following cases:',
+            'returnPoliy8':'1- If the product was manufactured at the request of the consumer or according to specifications specified by him, this excludes products that have a defect or that violate the specifications specified by the consumer.',
+            'returnPoliy9':'2- If the product is video tapes, CDs, CDs, or information programs that have been used.',
+            'returnPoliy10':'3- If the product is newspapers, magazines, publications, books, or anything else considered literature.',
+            'returnPoliy11':'4- If a defect appears in the product due to consumer misuse.',
+            'returnPoliy12':'5- If the contract deals with providing accommodation, transportation, or feeding services.',
+            'returnPoliy13':'6- If the contract deals with the purchase of software download products via the Internet.',
+            'returnPoliy14':'Return Policy:',
+            'returnPoliy15':'1- Without prejudice to the contractual and statutory provisions of the warranty, the consumer has the right to cancel the contract and return the product provided to him from the store within the seven days following the date of receipt of the product, and he has no right to that product after the seven days have passed.',
+            'returnPoliy16':'2- To return a product, it is required that the product be in good condition and that the consumer has not used the product or obtained any benefit from it. The store has the right to inspect the product before returning it to ensure its safety.',
+            'returnPoliy17':'3- he consumer bears the costs resulting from the return process. In the case of an international return, the consumer bears the full costs of shipping and delivering the product to the shipping company. In the event of defects or errors, the consumer will be compensated.',
+
+            'returnPoliy188':'The consumer has no right to return the product in the following cases:',
+            'returnPoliy19':'1- If the product was manufactured at the request of the consumer or according to specifications specified by him, this excludes products that have a defect or that violate the specifications specified by the consumer.',
+            'returnPoliy20':'2- If the product is video tapes, CDs, CDs, or information programs that have been used.',
+            'returnPoliy21':'3- If the product is newspapers, magazines, publications, books, or anything else considered literature.',
+            'returnPoliy22':'4- If a defect appears in the product due to consumer misuse.',
+            'returnPoliy18':'5- If the contract deals with providing accommodation, transportation, or feeding services.',
+            'returnPoliy23':'6- If the contract deals with the purchase of software download products via the Internet.',
+           
+        
+           
+
+
+
+
+
                'TradeAssuranceli3' : 'Arriving on time',
                'TradeAssuranceli4' : 'After-sales protections',
                'TradeAssuranceli5' : 'Product monitoring services',
@@ -470,6 +541,22 @@ i18n
                'Getsupport4' : 'Refunds',
                'Getsupport5' : 'Report abuse',
 
+             'rightssave' : 'All rights reserved to Royal Diagnostic Laboratories',
+             'rightssave1' : 'Terms and conditions apply',
+
+            //  jobs 
+            'jobs' : 'Jobs',
+            'opportunities':'Job opportunities will be available soon through the jobs platform',
+
+
+            // problem
+
+            "nameProblem" :'Mention The Problem ',
+            'commentProblem' : 'Comment',
+            'sendproblem' : 'Send',
+
+            
+
               //  Cart
 
               'shoppingCart' : 'Shopping Cart',
@@ -477,8 +564,45 @@ i18n
               'theAll' : 'Total : ',
               'payBtn' : 'Checkout',
               'checkout' : 'Checkout',
-                    
 
+                // medicalTests
+
+                'Medicaltests' : 'Medical Tests ',
+
+                // Insurances
+
+                'Insurances' : 'Medical Insurance',
+                'Insurances1' : 'To serve you better, we are contracting with medical insurance companies as soon as possible',
+
+                // Vaccinations
+                'Vaccinations' : 'Vaccinations',
+                'Vaccinations1' :'Vaccines are one of the best ways to prevent diseases and prevent their spread. Thus, they provide a healthy lifestyle for the patient and reduce the financial and social burdens of diseases. Perhaps the Covid-19 vaccine has been the most prominent factor recently in emphasizing the importance of taking vaccinations to continue a healthy life free of any annoying diseases. In this article, we will learn about the concept of vaccines and vaccination. What are their benefits? What are the most important types? What diseases can be reduced through vaccination? Vaccines play a role in forming memory and antibodies to confront the disease if it is transmitted through infection again to the body.',
+                'Vaccinations2' : 'What are vaccines?',
+                'Vaccinations3' : 'Vaccines or immunizations are injections, liquids, pills, or nasal sprays that enter the body to enable the immune system to recognize the causes of the disease, and to form immune memory and immune antibodies against the disease in the event that it is transmitted through infection again to the body. Vaccines have contributed over time to reducing the incidence of diseases, to the extent that it can be said that they have eliminated their appearance except in very small proportions, especially those diseases that were killing humanity, as researchers were able to access vaccines that combat the causes of those diseases.',
+                'Vaccinations4' : 'What is the mechanism of immune response?',
+                'Vaccinations5' : 'The immune response is activated in the body when a foreign body or vaccine (any substance that stimulates an immune response in the body) enters according to the following steps:',
+                'Vaccinations6' : '1. Foreign substances enter the body (pathogenic substances or vaccines), and the body detects them and realizes that they are foreign.',
+                'Vaccinations7' : '2. The body’s immune system is activated to fight these substances.',
+                'Vaccinations8' : '3. The immune system forms a memory against these substances, so that if they enter the body again, the immune system recognizes them and attacks them, and this is called immunity.',
+                'Vaccinations9' : 'What are the benefits of the vaccine?',
+                'Vaccinations10' : '1. Protects against serious diseases.',
+                'Vaccinations11' : '2. Prevents the spread of epidemics in communities.',
+                'Vaccinations12' : '3. It reduces the severity of the disease and its complications, if it does not prevent it from occurring at all.',
+                'Vaccinations13' : '4. Providing the financial burden for treating infections and diseases.',
+                'Vaccinations14' : 'It should be noted that in some vaccination programs, a supportive (booster) dose of this vaccine is given at the age of 12 years.',
+                'Vaccinations15' : 'Are vaccines safe?',
+                'Vaccinations16' : 'Yes, it is safe, as all vaccines undergo extensive safety testing and evaluation before they are approved for administration to humans.',
+                'Vaccinations17' : 'What is the vaccination schedule?',
+                'Vaccinations18' : 'World health institutions have been keen to set global vaccination schedules, which include the age groups that should receive vaccinations, in addition to the number of doses they need and when they should receive them. We emphasize here that it is necessary for both children and adults to obtain their vaccinations according to the specified timetable, as following the timetable contributes to obtaining protection from diseases as necessary.',
+                'Vaccinations19' : 'What are the side effects of vaccines?',
+                'Vaccinations20' : 'Most vaccinations are safe and do not cause serious side effects on the patient. However, in some cases, some patients may suffer from fever, rash, and diarrhea, which are conditions that can be easily treated after consulting a specialist doctor.',
+                'Vaccinations21' : 'Are vaccines given to pregnant women?',
+                'Vaccinations22' : 'There are some types of vaccine that must be given to pregnant women, such as diphtheria, tetanus, and whooping cough, while others are prohibited from being given during pregnancy, such as measles, German measles, and mumps. The influenza vaccine is also considered safe during pregnancy, and provides protection for the mother and her child, so a doctor must always be consulted in order for the pregnant woman to obtain the types of vaccine that are safe for her and to avoid danger to her and her fetus.',
+                'Vaccinations23' : 'What is World Immunization Week?',
+                'Vaccinations24' : 'Although immunization operations using various types of vaccines have been able to save millions of people around the world, according to the Saudi Ministry of Health, there are still more than 20 million children around the world who cannot take the vaccines they need. This has prompted international health organizations to designate the last week (24-30) of April each year, to raise awareness about immunizations and their importance in preventing serious diseases such as measles and polio. In this context, the Saudi Ministry of Health, represented by all its health facilities, contributes to raising health awareness on this topic',
+                
+
+                
           
 
 
@@ -624,14 +748,15 @@ i18n
           'araClients' : 'اراء العملاء',
           'torki' : 'تركي عبد الرحمن',
           'lorem' :'لوريم إيبسوم دولور يجلس أميت لوريم إيبسوم دولور يجلس أميت كونسيكتور',
-          'technical':'الدعم المهني',
-          'techLorem':'لوريم إيبسوم دولور يجلس أميت لوريم إيبسوم دولور يجلس أميت كونسيكتور.',
+          'technical' : 'باقات رويال الأساسية  ',
+          'technical2' : 'باقات رويال التخصصية',
+          'technical3' : 'باقات الشركات و الرعاية المنزلية ',          'techLorem':'لوريم إيبسوم دولور يجلس أميت لوريم إيبسوم دولور يجلس أميت كونسيكتور.',
           'waterAnalysis':'تحليل المياة',
           'pharmaAnalysis':'التحاليل الصيدلانية',
           'recipeMedical' : 'الوصفة الطبية',
           'chooseFileRecipe' : 'قم باختيار ملف الروشتة',
           'fileUploadedSuccessfully' : 'تم ارسال الروشتة بنجاح سوف نتواصل معك',
-          'bloodAnalysis' : 'تحليل الدم',
+          'bloodAnalysis' : 'التحاليل الطبية ',
           'homeVisit':'زيارة منزلية',
           'Branches':'الفروع',
           'Insurances':'التامينات',
@@ -660,34 +785,64 @@ i18n
           'reserverNow' : 'احجز الان!',
 
           // about Page
-          'aboutUs' : 'عن المختبر',
-          'aboutUsHeading' : 'مختبرات رويال التشخيصية' ,
-          'aboutUsParagraph1' : 'نسعى جاهدين إلى أن تكون خريجات ​​المختبرات الطبية التي تعتمد على إنتاج الأيونات بالتطوير والتقنيات الحديثة في مجال المختبرات الطبية المخبريه.',
+          'aboutUs' : 'عن مختبرات رويال',
+          // 'aboutUsHeading' : 'مختبرات رويال التشخيصية' ,
+          'aboutUsParagraph1' : 'تشمل الهيكل الادارى و الطبي  منهم د.احمد و انا و د. مصطفي داغستاني المدير الطبي  د. عبد الرحمن حجازى رئيس مجلس الادارة تم ارسال الصور مسبقا للجميع .',
           'aboutUsParagraph2' : 'نسعى مجاهدين إلى أن نكون خريجي المختبرات الطبية التي تعمل علي المظهر النهائي خدمات مخبرية عالية الجودة تتماشى مع متطلبات المجتمع ومواكبة آخر التفاصيل.' ,
-          'firstPara' : 'تعتبر معامل المختبر هي أكبر شركات المختبرات الطبية الخاصة في منطقة الشرق الأوسط، التي توفر خدمات المختبرات التشخيصية والاختبارات الباثولوجية للأوساط الطبية في المملكة العربية السعودية.',
+          'docName' : 'د. أحمد محمد حجازي ',
+          'doc1':'بروفيسور مساعد في طب علم الدم & نقل الدم في جامعة الأمير سطام بن عبدالعزيز.',
+          'doc121':'استشاري الطب المخبري.',
+          
+          'doc2':'زميل أبحاث اكلينيكي مشارك في مركز الملك عبدالله العالمي للأبحاث الطبية- الحرس الوطني.',
+          'doc3':'مؤسس & المدير التنفيذي لمختبرات رويال.',
+          'doc4':'الرئيس التنفيذي للجمعية السعودية لأبحاث  علم التخثر الدموي.',
+          'doc5':'حاصل على شهادة ماجستير في طب نقل الدم والأعضاء والخلايا الجذعية- جامعة بريستول بريطانيا',
+          'doc6' : 'دكتوراة في الطب الإكلينيكي ( تخصص علم الدم والمناعة ) من جامعة امبريال كولدج لندن بالتعاون في الإشراف مع جامعة اكسفورد - بريطانيا ',
+          'doc7' : 'زمالة التعليم العالي- بريطانيا.',
+          
+          'doc8' : 'لديه أكثر من ١٠٠ بحث منشور في مجلات ذات تصنيف عالي ومحكمة عالميا.',
+          'doc9' : 'محرر في عدد من المجلات العلمية العالمية.',
+          'doc10' : 'متحدث سعودي دولي في عدد كثير من المؤتمرات الرائدة عالمياً في ذات التخصص',
+         
+
+          'firstPara' : 'تعتبر مختبرات رويال التشخيصية هي واحدة من  المختبرات الطبية الخاصة في المملكة العربية السعودية ، التي توفر خدمات المختبرات التشخيصية والاختبارات الباثولوجية للأوساط الطبية في المملكة العربية السعودية.',
           'readeBtn' :'اقرأ المزيد !',
           
           'ourVision' : 'رؤيتنا' ,
-          'secPara' : 'أن نكون الرائد المعترف به في مجال الطب المخبري في الشرق الأوسط.',
-          'after' : 'تتحقق هذه الرؤية من خلال:' ,
-          'firstLi' : 'التزام قادتنا وموظفينا بمهمتنا وقيمنا الأساسية.',
-          'secondLi' : 'توفير البيئة المثالية خلال بيئة العمل.',
-          'theThirdLi' : 'لتطبيق المبتكر للتقنيات الجديدة.',
+          'secPara' : 'توسيع نطاق خدماتنا في جميع أنحاء المملكة بجودة عالية وتحسين الخدمات',
+          // 'after' : 'تتحقق هذه الرؤية من خلال:' ,
+          // 'firstLi' : 'التزام قادتنا وموظفينا بمهمتنا وقيمنا الأساسية.',
+          // 'secondLi' : 'توفير البيئة المثالية خلال بيئة العمل.',
+          // 'theThirdLi' : 'لتطبيق المبتكر للتقنيات الجديدة.',
 
-          'ourMission' : 'مهمتنا' ,
-          'thirdPara' : 'توفير معلومات تشخيصية معملية عالية الجودة للمساعدة في تحسين صحة ورفاهية المجتمعات التي نخدمها.',
-          'firLi' : 'تقديم خدمات معملية طبية عالية الجودة باستخدام أحدث التقنيات.',
-          'secLi' : 'التأكيد على حسن المعاملة، والتعاطف مع المرضى، بالإضافة إلى الخبرة المهنية.',
-          'thirdLi' : 'السعي الحثيث لتحقيق الدقة في النتائج، والاستجابة لاحتياجات عملائنا، وسرعة الخدمة.',
-          'fourthLi' : 'اكتساب ونشر وتطبيق المعرفة من خلال الاستخدام المبتكر للتكنولوجيا.',
-          'fifthLi' : 'إنشاء وتوسيع الشراكات المهنية التعاونية.',
+          // 'ourMission' : 'مهمتنا' ,
+          // 'thirdPara' : 'توفير معلومات تشخيصية معملية عالية الجودة للمساعدة في تحسين صحة ورفاهية المجتمعات التي نخدمها.',
+          // 'firLi' : 'تقديم خدمات معملية طبية عالية الجودة باستخدام أحدث التقنيات.',
+          // 'secLi' : 'التأكيد على حسن المعاملة، والتعاطف مع المرضى، بالإضافة إلى الخبرة المهنية.',
+          // 'thirdLi' : 'السعي الحثيث لتحقيق الدقة في النتائج، والاستجابة لاحتياجات عملائنا، وسرعة الخدمة.',
+          // 'fourthLi' : 'اكتساب ونشر وتطبيق المعرفة من خلال الاستخدام المبتكر للتكنولوجيا.',
+          // 'fifthLi' : 'إنشاء وتوسيع الشراكات المهنية التعاونية.',
+
+
+          'ourMsg' : 'رسالتنا' ,
+          'ourMsg1' : 'تقديم خدمات المختبرات الطبية التشخيصية المتميزة بجودة عالية' ,
+          
+          'ourValue' : 'قيمنا' ,
+          'ourValue1' : ' الأمان - الجودة العاليه - الولاء - الكفاء - التطوير المستمر' ,
+
+          'Ourgoals' : 'أهدافنا',
+          'Ourgoals1' : 'توسيع نطاق الوصول إلى المرضى من خلال الابتكار في المملكة العربية السعودية',
+          'Ourgoals2' : 'الحصول على الاعتمادات المحلية والدولية لجميع الفروع',
+          'Ourgoals3' : 'إدخال الاختبارات والخدمات والأقسام المبتكرة',
+          'Ourgoals4' : 'لتطوير مشاريع تحسين العملية',
+          'Ourgoals5' : 'تحسين أداء الفريق الإداري والطبي والفني',
 
            // Royal Page
 
-           'p1' : 'تعتبر معامل المختبر هي أكبر شركات المختبرات الطبية الخاصة في منطقة الشرق الأوسط، التي توفر خدمات المختبرات التشخيصية والاختبارات الباثولوجية للأوساط الطبية في المملكة العربية السعودية.',
-           'p2' : 'تقدم الشركة مجموعة من أكثرمن 1400 تحليل في مجالات علم المناعة ، أمراض الدم / التخثر ، كيمياء الدم التشخيصية ، علم الطفيليات ، علم الأحياء الدقيقة / الأمراض المعدية ، علم السموم ، علم الخلايا ، علم الأمراض الجراحية ، قياس التدفق الخلوي ، علم البايولوجيا الجزيئية وعلم الوراثة الخلوي. يتم جمع العينات في أكثر من 214 فرعا تغطي محافظات جميع المناطق في مصر وتتم التحاليل في المختبر الرئيسى بالاضافةالي المعامل المركزية في المحافظات الرئيسية في مصر.',
-           'p3' : 'تم تأسيس الشركة عام 1979 كمختبر واحد علي يد الاستاذة الدكتورة مؤمنة كامل- أستاذة علم المناعة بكلية الطب جامعة الدمام',
-           'p4' : 'تم تأسيس الشركة عام 1979 كمختبر واحد علي يد الاستاذة الدكتورة مؤمنة كامل- أستاذة علم المناعة بكلية الطب جامعة القاهرة.و يعد المختبر اليوم أكبر سلسلة في المختبرات الطبية خاصة مع التوجه المتجدد نحو التوسع. على مدى 40 عامًا . اكتسبت معامل المختبر الكثير من المعرفة عن الاحتياجات والتوقعات الخاصة بك في خلال 40 عاما من الريادة في مجال التحاليل الطبية ، و لهذا السبب في تقوم معامل المختبر باتباع معايير الجودة على جميع الجبهات و لذلك هي المختبرات الوحيدة الحاصلة علي CAP في مصر منذ 2010 و الذي يعتبر المعيار الذهبي لاعتماد المختبرات الطبية مما يعني أن دقة نتائج المختبر مضمونة ويتم الحصول علي نتائج مماثلة من جميع المختبرات المعتمدة من CAP في جميع أنحاء العالم.',
+           'p1' : 'تقدم الشركة مجموعة من أكثرمن 1400 تحليل في مجالات علم المناعة ، أمراض الدم / التخثر ، كيمياء الدم التشخيصية ، علم الطفيليات ، علم الأحياء الدقيقة / الأمراض المعدية ، علم السموم ، علم الخلايا ، علم الأمراض الجراحية ، قياس التدفق الخلوي ، علم البايولوجيا الجزيئية وعلم الوراثة الخلوي.',
+           'p2' : 'تم تأسيس المختبر عام 2024  علي يد الاستاذ الدكتور د. أحمد محمد حجازي .',
+           'p3' : 'بروفيسور مساعد في طب علم الدم & نقل الدم في جامعة الأمير سطام بن عبدالعزيز',
+           'p4' : 'إضافة إلى ذلك لنا القدرة علي سحب العينات و تسليم النتائج من و الي مكان تواجدكم وأيضا توفير نتائج الاختبار الخاص بك مجانا، على موقعنا الالكتروني ونحن نسعى باستمرار لتجاوز توقعاتك والوفاء بوعودنا لأننا نهتم حقًا من القلب.',
            'p5' : 'تمثل معامل رويال أكبر شبكة في السعودية بأكثر من 218 فرعًا علي مستوي الجمهورية و أيضا يؤخذ في الاعتبار اختيار أفضل الكوادر للعمل في معامل المختبر سواءا على المستويات الإدارية والفنية. تعتبر معامل المختبر أول مختبر طبي في مصر يستخدم تكنولوجيا “خلية عمل” و هي التقنية الأحدث في تكنولوجيا المختبرات الطبية ، وبالتالي قلة الأخطاء البشرية الي الحد الأدني.',
            'p6' : 'إضافة إلى ذلكن القدرة علي سحب العينات و تسليم النتائج من و الي مكان تواجدكم وأيضا توفير نتائج الاختبار الخاص بك مجانا، على موقعنا الالكتروني ونحن نسعى باستمرار لتجاوز توقعاتك والوفاء بوعودنا لأننا نهتم حقًا من القلب.',
            'readLess' : 'اقرأ أقل !',
@@ -832,6 +987,40 @@ i18n
              'TradeAssurance' : 'ضمان التجارة',
              'TradeAssuranceli1' : 'دفعات آمنة وسهلة',
              'TradeAssuranceli2' : 'سياسة الاسترجاع',
+
+            'returnPlicy' : 'سياسة الاسترجاع لمختبرات رويال التشخيصية ',
+            'returnPoliy1':'استرجاع المبالغ بعد 3 ايام من تاريخ الفاتورة مع إحضار اصل الفاتورة .',
+
+            'returnPoliy2':'سياسة الإستبدال ',
+            'returnPoliy3':'استبدال الخدمات خلال شهر من تاريخ الفاتورة .',
+            'returnPoliy4':'سياسة الإستبدال .',
+            'returnPoliy5':'1- مع عدم الإخلال بأحكام الضمان الاتفاقية والنظامية، يحق للمستهلك استبدال المنتج المقدّم إليه من المتجر خلال السبعة الأيام التالية لتاريخ استلام المنتج، ولا يحق له استبدال المنتج بعد مرور السبعة أيام.',
+            'returnPoliy6':'2- يشترط لاستبدال المنتج أن يكون المنتج بحالة سليمة وألا يكون المستهلك قد استخدم المنتج أو حصل على منفعته، ويحق للمتجر معاينة المنتج قبل استبداله للتأكد من سلامته ويتحمل المستهلك دفع قيمة الشحن في حال أراد استبدال المنتج وفي الاستبدال الدولي يتحمل المستهلك كامل تكاليف الشحن وتسليم المنتج لشركة الشحن وفي حال وجود عيوب أو خطأ سيتم تعويض المستهلك',
+            'returnPoliy7':'لا يحق للمستهلك استبدال المنتج في الحالات التالية:',
+            'returnPoliy8':'1- إذا كان المنتج تم تصنيعه بناءً على طلب المستهلك أو وفقاً لمواصفات حدّدها، ويستثنى من ذلك المنتجات التي بها عيب أو التي خالفت المواصفات المحدّدة من قبل المستهلك.',
+            'returnPoliy9':'2- إذا كان المنتج عبارة عن أشرطة فيديو أو أسطوانات أو أقراصاً مدمجة أو برامج معلوماتية تم استخدامها.',
+            'returnPoliy10':'3- إذا كان المنتج عبارة صحف أو مجلّات أو منشورات أو كتب أو غير ذلك مما يُعَد من المؤلفات.',
+            'returnPoliy11':'4- إذا ظهر عيب في المنتج بسبب سوء حيازة المستهلك.',
+            'returnPoliy12':'5- إذا كان العقد يتناول تقديم خدمات إيواء أو نقل أو إطعام.',
+            'returnPoliy13':'6- إذا كان العقد يتناول شراء منتجات تحميل البرامج عبر الانترنت.',
+            'returnPoliy14':'سياسة الاسترجاع:',
+            'returnPoliy15':'1- مع عدم الإخلال بأحكام الضمان الاتفاقية والنظامية، يحق للمستهلك فسخ العقد واسترجاع المنتج المقدّم إليه من المتجر خلال السبعة الأيام التالية لتاريخ استلام المنتج ، ولا يحق له ذلك المنتج بعد مرور السبعة أيام.',
+            'returnPoliy16':'2- يشترط لاسترجاع المنتج أن يكون المنتج بحالة سليمة وألا يكون المستهلك قد استخدم المنتج أو حصل على منفعته، ويحق للمتجر معاينة المنتج قبل استرجاعه للتأكد من سلامته.',
+            'returnPoliy17':'3- يتحمل المستهلك التكاليف المترتبة على عملية الاسترجاع وفي حالة الاسترجاع الدولي يتحمل المستهلك كامل تكاليف الشحن وتسليم المنتج لشركة الشحن وفي حال وجود عيوب أو خطأ سيتم تعويض المستهلك',
+            'returnPoliy188':'لا يحق للمستهلك استرجاع المنتج في الحالات التالية:',
+            'returnPoliy19':'1- إذا كان المنتج تم تصنيعه بناءً على طلب المستهلك أو وفقاً لمواصفات حدّدها، ويستثنى من ذلك المنتجات التي بها عيب أو التي خالفت المواصفات المحدّدة من قبل المستهلك.',
+            'returnPoliy20':'2- إذا كان المنتج عبارة عن أشرطة فيديو أو أسطوانات أو أقراصاً مدمجة أو برامج معلوماتية تم استخدامها.',
+            'returnPoliy21':'3- إذا كان المنتج عبارة صحف أو مجلّات أو منشورات أو كتب أو غير ذلك مما يُعَد من المؤلفات.',
+            'returnPoliy22':'4- إذا ظهر عيب في المنتج بسبب سوء حيازة المستهلك.',
+            'returnPoliy18':'5- إذا كان العقد يتناول تقديم خدمات إيواء أو نقل أو إطعام.',
+            'returnPoliy23':'6- إذا كان العقد يتناول شراء منتجات تحميل البرامج عبر الانترنت.',
+           
+
+
+
+
+
+
              'TradeAssuranceli3' : 'الشحن في الوقت المحدد',
              'TradeAssuranceli4' : 'وسائل حماية ما بعد البيع',
              'TradeAssuranceli5' : 'خدمات مراقبة المنتج',
@@ -849,6 +1038,22 @@ i18n
              'Getsupportl3' : 'التحقق من حالة الطلب',
              'Getsupport4' : 'المبالغ المستردة',
              'Getsupport5' : 'بلغ عن سوء معاملة',
+              
+             'rightssave' : 'الحقوق محفوظة لمختبرات رويال التشخيصية',
+             'rightssave1' : 'تطبق الشروط و الاحكام',
+
+
+            //  jobs 
+            'jobs' : 'وظائف',
+            'opportunities':'سيتم اتاحة الفرص الوظيفية قريبا من خلال منصة الوظائف ',
+
+            // problem
+
+            "nameProblem" :'اذكر نوع المشكلة ',
+            'commentProblem' : 'التعليق',
+            'sendproblem' : 'ارسال',
+
+
 
 
             //  Cart
@@ -859,6 +1064,43 @@ i18n
               'checkout' : 'اكمال الطلب',
               'services' : 'الخدمات',
               'finish' : 'اطلب',
+
+              // medicalTests
+
+              'Medicaltests' : 'التحاليل الطبية ',
+
+              // Insurances
+              'Insurances' : 'التأمين الطبي ',
+              'Insurances1' : 'لخدمتكم بشكل أفضل .. جارى التعاقد مع شركات دقيقة طبية باقرب وقت ممكن',
+
+              // Vaccinations
+
+              'Vaccinations' : 'التطعيمات ',
+                'Vaccinations1' : 'تشكّل اللقاحات أحد أفضل طرق الوقاية من الأمراض ومنع انتشارها، وبهذا تؤمّن نمط حياة صحّيّ للمريض وتخفّف من أعباء الأمراض المادّيّة والاجتماعيّة. ولعل لقاح كوفيد 19 كان العامل الأبرز مؤخرا في التأكيد على أهمية أخذ التطعيمات للاستمرار في حياة صحية خالية من أي أمراض مزعجة. سنتعرّف في هذا المقال على مفهوم اللقاحات والتطعيم، ما هي فوائدها؟ وما هي أهمّ أنواعها؟ وما هي الأمراض التّي يمكن الحدّ منها عن طريق التطعيم؟اللقاحات تؤدي دورا في تشكيل ذاكرة وأضداد لمواجهة المرض في حال تمّ انتقاله عبر العدوى مرّة أخرى إلى الجسم',
+                'Vaccinations2' : 'ما هي اللقاحات؟',
+                'Vaccinations3' : 'اللقاحات أو المطاعيم، هي عبارة عن حقن أو سوائل أو حبوب أو بخّاخات أنف، تدخل الجسم لتمكن جهاز المناعة من التّعرّف على مسبّبات المرض، وتشكيل ذاكرة مناعية وأجسام مناعية مضادة للمرض في حال تمّ انتقاله عبر العدوى مرّة أخرى إلى الجسم. لقد ساهمت المطاعيم عبر الزمن في تقليل نسبة الإصابة بالأمراض، إلى الحدّ الذي يمكن القول بأنّها قضت على ظهورها إلا من نسب ضئيلة جداً، لاسيما تلك الأمراض التي كانت تفتك بالبشرية، حيث تمكن الباحثون من الوصول إلى مطاعيم تكافح مسببات تلك الأمراض .',
+                'Vaccinations4' : 'ما هي آليّة الاستجابة المناعيّة؟',
+                'Vaccinations5' : 'تتفعّل الاستجابة المناعيّة في الجسم عند دخول جسم غريب أو مطعوم (أيّ مادّة تحرّض استجابة مناعيّة في الجسم) وفق الخطوات التّالية:',
+                'Vaccinations6' : '1.	دخول موادّ غريبة للجسم (موادّ ممرضة أو مطاعيم) فيكتشفها الجسم ويدرك أنّها غريبة.',
+                'Vaccinations7' : '2.	يتفعّل جهاز المناعة في الجسم لمحاربة هذه الموادّ.',
+                'Vaccinations8' : '3.	يشكّل جهاز المناعة ذاكرة ضدّ هذه الموادّ، حتّى إذا دخلت الجسم مرّة اخرى يتعرّف عليها جهاز المناعة ويهاجمها، وهذا ما يسمّى بالمناعة.',
+                'Vaccinations9' : 'ما هي فوائد اللقاح؟',
+                'Vaccinations10' : '1.	يحمي من الإصابة بالأمراض الخطيرة.',
+                'Vaccinations11' : '2.	يمنع انتشار الأوبئة في المجتمعات.',
+                'Vaccinations12' : '3.	يقلل من حدة الإصابة بالمرض ومضاعفاته إن لم يمنع حدوثه أساساً.',
+                'Vaccinations13' : '4.	توفير الأعباء المادّيّة لعلاج الإصابات بالأمراض.',
+                'Vaccinations14' : 'يجدر الإشارة إلى أنه في بعض برامج التطعيم، يتمّ إعطاء جرعة داعمة (معزّزة) من هذا المطعوم بعمر 12 عاماً.',
+                'Vaccinations15' : 'هل اللقاحات آمنة؟',
+                'Vaccinations16' : 'نعم هي آمنة، حيث أنّ جميع التطعيمات تخضع لاختبارات وتقييم مكثّف للسلامة قبل الموافقة عليها لإعطائها للبشر.',
+                'Vaccinations17' : 'ما هو جدول التطعيم؟',
+                'Vaccinations18' : 'لقدحرصت مؤسسات الصحة العالمية على وضع جداول عالميّة للتلقيح، وتشمل الفئات العمرية التي يجب أن تحصل على التطعيمات، بالإضافة إلى عدد الجرعات التّي يحتاجون إليها ومتى يجب أن يحصلوا عليها. ونؤكد هنا على أنه من الضروري لكلّ من الأطفال والبالغين الحصول على تطعيماتهم وفقاً للجدول الزّمنيّ المحدد، حيث أن اتّباع الجدول الزّمنيّ يساهم بالحصول على الحماية من الأمراض كما يجب.',
+                'Vaccinations19' : 'ما هي الآثار الجانبيّة للقاحات؟',
+                'Vaccinations20' : 'معظم التطعيمات آمنة ولا تسبّب آثارا جانبيّة الخطيرة على المريض، إلا أنه وفي بعض الحالات، قد يعاني بعض المرضى من الحمّى والطّفح الجلديّ والإسهال، وهي حالات يمكن علاجها بسهولة وذلك بعد مراجعة الطبيب المختص.',
+                'Vaccinations21' : 'هل تعطى اللقاحات للحامل؟',
+                'Vaccinations22' : 'يوجد بعض أنواع اللقاح التي يجب إعطاؤها للحامل مثل الدفتيريا والكزاز والسّعال الدّيكي، وبعضها الآخر ممنوع إعطاؤها أثناء الحمل، مثل الحصبة والحصبة الألمانيّة والنّكاف. كما يعدّ لقاح الإنفلونزا آمناً خلال الحمل، ويؤمّن حماية للأمّ وطفلها، لذا يجب دائماً استشارة الطّبيب من أجل حصول الحامل على أنواع اللقاح الآمنة لها وتجنّب الخطيرة عليها وعلى جنينها.',
+                'Vaccinations23' : 'ما هو الأسبوع العالمي للتحصينات؟',
+                'Vaccinations24' : 'بالرغم من تمكّن عمليات التحصين بواسطة مختلف أنواع اللقاح من إنقاذ ملايين البشر حول العالم، إلا أنه وبحسب وزارة الصحة السعودية ما يزال هنالك أكثر من 20 مليون طفل حول العالم لا يستطيعون أخذ اللقاحات التي يحتاجونها، هذا الأمر الذي دفع بالمنظمات الصحية العالمية إلى تخصيص الأسبوع الأخير (24-30) من شهر أبريل من كل عام، للتوعية حول التحصينات وأهميتها في منع الإصابة الإصابة بالأمراض الخطيرة مثل الحصبة وشلل الأطفال. في هذا السياق تساهم وزارة الصحة السعودية متمثلة بكل مرافقها الصحية، برفع الوعي الصحي حول هذا الموضوع.',
+               
 
             
 

@@ -27,6 +27,13 @@ import Appointment from './Component/AppointmentDetails/Appointment';
 import Appointments from './Component/Appointment/Appointments';
 import AboutUs from './Component/AboutUs/About';
 import ApplyJob from './Component/ApplyJob/ApplyJob';
+import GetMoney from './Component/getMoney/GetMoney';
+import CenterNews from './Component/CenterNews/CenterNews';
+import JobOffer from './Component/JobOffer/JobOffer';
+import Problem from './Component/problem/Problem';
+import Medicaltests from './Component/Medicaltests/Medicaltests';
+import Insurances from './Component/Insurances/Insurances';
+import Vaccinations from './Component/Vaccinations/Vaccinations';
 
 const App = () => {
   const { isAuthentication } = useAuth();
@@ -47,6 +54,13 @@ const App = () => {
             <Route path="recipeMedical" element={isAuthentication ? <Recipe /> : <Navigate to="/login" />} />
             <Route path="homeVisit" element={isAuthentication ? <HomeVisit /> : <Navigate to="/login" />} />
             <Route path="about" element={<About />} />
+            <Route path="getMoney" element={<GetMoney />} />
+            <Route path="Insurances" element={<Insurances />} />
+            <Route path="medicalTests" element={<Medicaltests />} />
+            <Route path="jopOffer" element={<JobOffer />} />
+            <Route path="Vaccinations" element={<Vaccinations />} />
+            <Route path="problem" element={<Problem />} />
+            <Route path="centerNews" element={<CenterNews />} />
             <Route path="about-us" element={<AboutUs />} />
             <Route path="royal" element={<Royal />} />
             <Route path="apply-for-job" element={<ApplyJob />} />

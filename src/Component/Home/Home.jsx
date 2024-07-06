@@ -151,10 +151,14 @@ const Home = () => {
               </div>
 
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className=" text-decoration-none text-black" to={'./medicalTests'}>
+
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-droplet mb-3 fs-2"></i>
                 <h5 className="mt-2 text-center">{t('bloodAnalysis')}</h5>
                 </div>
+                </Link>
+
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
               <Link className=" text-decoration-none text-black" to={'./homeVisit'}>
@@ -171,10 +175,14 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className=" text-decoration-none text-black" to={'./Insurances'}>
+
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-scroll mb-3 fs-2"></i>
                 <h5 className="mt-2 text-center">{t('Insurances')}</h5>
                 </div>
+                </Link>
+
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
               <Link className=" text-decoration-none text-black" to={'/doctor'}>
@@ -185,10 +193,14 @@ const Home = () => {
                 </Link>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className=" text-decoration-none text-black" to={'/Vaccinations'}>
+
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-syringe mb-3  fs-2"></i>
                 <h5 className="mt-2 text-center">{t('Vaccinations')}</h5>
                 </div>
+                </Link>
+
               </div>
               
             </div>
@@ -286,17 +298,17 @@ const Home = () => {
         <div className="row">
           <div className="col-md-4">
             <i className={`${Styles.icona} fa-solid fa-vial-virus py-5`}></i>
-            <h3>{t('technical')}</h3>
+            <h3 className='pb-3'>{t('technical')}</h3>
             <p>{t('techLorem')}</p>
           </div>
           <div className="col-md-4">
             <i className={`${Styles.icona} fa-solid fa-vial-virus py-5`}></i>
-            <h3>{t('technical')}</h3>
+            <h3 className='pb-3'>{t('technical2')}</h3>
             <p>{t('techLorem')}</p>
           </div>
           <div className="col-md-4">
             <i className={`${Styles.icona} fa-solid fa-vial-virus py-5`}></i>
-            <h3>{t('technical')}</h3>
+            <h3 className='pb-3'>{t('technical3')}</h3>
             <p>{t('techLorem')}</p>
           </div>
         </div>

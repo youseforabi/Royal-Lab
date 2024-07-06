@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -23,9 +24,11 @@ const Footer = () => {
               <p>{t('TradeAssurance')}</p>
               <ul>
                 <li>{t('TradeAssuranceli1')}</li>
-                <li>{t('TradeAssuranceli2')}</li>
-                <li>{t('TradeAssuranceli3')}</li>
-                <li>{t('TradeAssuranceli4')}</li>
+                <li>
+                  <Link to={'/getMoney'} className='text-decoration-none text-white'>
+                    {t('TradeAssuranceli2')}
+                  </Link>
+                  </li>
                 <li>{t('TradeAssuranceli5')}</li>
               </ul>
             </div>
@@ -35,7 +38,13 @@ const Footer = () => {
                 <li>{t('knowusl1')}</li>
                 <li>{t('knowusl2')}</li>
                 <li>{t('knowusl3')}</li>
-                <li>{t('knowusl4')}</li>
+                <li>
+                <Link to={'/jopOffer'} className='text-decoration-none text-white'>
+
+                  {t('knowusl4')}
+                  </Link>
+
+                  </li>
               </ul>
             </div>
             <div className="col-md-3">
@@ -43,15 +52,21 @@ const Footer = () => {
               <ul>
                 <li>{t('Getsupportl1')}</li>
                 <li>{t('Getsupportl2')}</li>
-                <li>{t('Getsupportl3')}</li>
-                <li>{t('Getsupport4')}</li>
-                <li>{t('Getsupport5')}</li>
+                <li>
+                <Link to={'/problem'} className='text-decoration-none text-white'>
+                {t('Getsupport5')}
+                </Link>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className='text-center py-4'>
+        <p>{t('rightssave')}</p>
+        <p>{t('rightssave1')}</p>
+        
+
         <p>Powered by <a className={Styles.webbing} href="http://webbing-agency.com/">webbing agency</a></p>
         </div>
         
