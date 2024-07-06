@@ -109,7 +109,7 @@ const Home = () => {
                   className='d-block w-100'
                   height={600}
                   style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
-                  src="https://as2.ftcdn.net/v2/jpg/01/36/40/63/1000_F_136406352_ti3nfF1Zs5iioMwB7QFoicmUXw4q4G7n.jpg"
+                  src="https://img.freepik.com/premium-photo/medicine-medical-hand-research-science-test-biotechnology-tube-laboratory-experiment-generative-ai_163305-233875.jpg?w=996"
                   alt="Slide 1"
                 />
               </Carousel.Item>
@@ -118,16 +118,7 @@ const Home = () => {
                   className='d-block w-100'
                   height={600}
                   style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
-                  src="https://as2.ftcdn.net/v2/jpg/01/36/86/99/1000_F_136869973_nf2llNAYQcnsnqOFx0JXkMHxH9uXEbHs.jpg"
-                  alt="Slide 1"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className='d-block w-100'
-                  height={600}
-                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
-                  src="https://as1.ftcdn.net/v2/jpg/01/37/14/18/1000_F_137141877_sGZV4s0SryGmrnfymp1qzt0xNLYfU3qC.jpg"
+                  src="https://img.freepik.com/premium-photo/cybersecurity-privacy-concepts-protect-data-lock-icon-internet-network-security-technology-businessman-protecting-personal-data-smart-phone-with-virtual-screen-interfaces_265022-3740.jpg?w=996"
                   alt="Slide 2"
                 />
               </Carousel.Item>
@@ -136,7 +127,7 @@ const Home = () => {
                   className='d-block w-100'
                   height={600}
                   style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
-                  src="https://as2.ftcdn.net/v2/jpg/01/70/00/65/1000_F_170006526_B4foJEVWy2NwzAbQKURDrYN0ChCif3Gh.jpg"
+                  src="https://img.freepik.com/premium-photo/science-chemistry-biology-people-concept-close-up-scientist-hand-with-microscope-green-leaf-making-research-clinical-laboratory_380164-96024.jpg?w=996"
                   alt="Slide 3"
                 />
               </Carousel.Item>
@@ -145,8 +136,108 @@ const Home = () => {
                   className='d-block w-100'
                   height={600}
                   style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
-                  src="https://as2.ftcdn.net/v2/jpg/00/83/47/27/1000_F_83472728_qdJuM2x77LFSeuftZ515jLuijRyM5Yzm.jpg"
-                  alt="Slide 3"
+                  src="https://img.freepik.com/premium-photo/science-medicine-research-medical-laboratory-test-hand-tube-biotechnology-experiment-generative-ai_163305-224853.jpg?w=996"
+                  alt="Slide 4"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/premium-photo/science-biotechnology-hand-test-medicine-medical-experiment-laboratory-research-tube-generative-ai_163305-233877.jpg?w=996"
+                  alt="Slide 5"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/premium-photo/science-biotechnology-hand-test-medicine-medical-experiment-laboratory-research-tube-generative-ai_163305-233877.jpg?w=996"
+                  alt="Slide 6"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/premium-photo/science-biotechnology-hand-test-medicine-medical-experiment-laboratory-research-tube-generative-ai_163305-233877.jpg?w=996"
+                  alt="Slide 7"
+                />
+              </Carousel.Item>
+
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/premium-photo/science-biotechnology-hand-test-medicine-medical-experiment-laboratory-research-tube-generative-ai_163305-233877.jpg?w=996"
+                  alt="Slide 8"
+                />
+              </Carousel.Item>
+
+
+                <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/premium-photo/science-biotechnology-hand-test-medicine-medical-experiment-laboratory-research-tube-generative-ai_163305-233877.jpg?w=996"
+                  alt="Slide 9"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/free-photo/doctor-performing-medical-research-lab_23-2149335672.jpg?t=st=1720266872~exp=1720270472~hmac=e63314f6f7c3b78cf3b99e601db9085b039032d53f1e529d9f1661ef0e96fadc&w=996"
+                  alt="Slide 10"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/free-photo/hands-with-protective-glove-holding-covid-vaccine_23-2148958370.jpg?t=st=1720266726~exp=1720270326~hmac=b06545ed6fe8da494756d71b999b1ccbe6cc9e45b8ba3d7ba9d590cf4b29189d&w=740"
+                  alt="Slide 11"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-covid-test_23-2148958350.jpg?t=st=1720266956~exp=1720270556~hmac=5718e198cdeccc29663c7c552d317cb9688ddfb6c5268874533488012f41c147&w=1380"
+                  alt="Slide 12"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/free-photo/woman-working-laborator_23-2148824177.jpg?t=st=1720266960~exp=1720270560~hmac=8b2d26f732cf2f494d632a4332699d520e6645b504365df9f7479c7dabd4a911&w=996"
+                  alt="Slide 13"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  height={600}
+                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
+                  src="https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958362.jpg?t=st=1720266963~exp=1720270563~hmac=76fd875319446239c6f10166b2aa7a9f4bc33e93188d7d21ae392d6892ecc320&w=360"
+                  alt="Slide 14"
                 />
               </Carousel.Item>
             </Carousel>
