@@ -112,6 +112,7 @@ i18n
           'tahalilElgezaa' : 'Food analyses',
           'araClients' : 'Clients Opinion',
           'torki' : 'Torki abdelrahman',
+          "yourMsg": "Message Content",
           'lorem' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 
           'technical' : 'Basic Royal Packages',
@@ -372,10 +373,13 @@ i18n
 
           'serveBtnNow' : 'Book Now!',
           "pleaseEnterName": "Please enter a name",
+          "commentCantBeEmpty": "Comment can not be empty",
+          "commentRecievedSuccessfuly": "We have recieved your comment successfuly",
           "pleaseEnterEmail": "Please enter an email",
           "pleaseEnterSubject": "Please enter message subject",
           "pleaseEnterAddress": "Please enter an address",
           "uploadYourCv": "Please upload your CV",
+          "leavuscomment": "Leav Us a Comment",
           "requestReceived": "Your Request have recieved successfuly, we will contact you!",
           "pleaseEnterAge": "Please enter an age",
           "pleaseEnterPhone": "Please enter a phone number",
@@ -482,6 +486,8 @@ i18n
 
           'sendPharmacy' : 'Send',
 
+          "showMore": "Show More",
+          "showLess": "Show Less",
 
                // footer
                'TradeAssurance' : 'Trade Assurance',
@@ -654,6 +660,8 @@ i18n
           'appointmentDate' : "تاريخ الحجز" ,
           'appointmentStatus' : "حالة الحجز" ,
           'appointmentDetails' : "تفاصيل الحجز" ,
+          "leavuscomment": "اترك لنا تعليقا",
+          "yourMsg": "محتوي تعليقك",
           'recipientAddress' : "عنوان المستلم" ,
           'orderDate' : "تاريخ الطلب" ,
           'orderStatus' : "حالة الطلب" ,
@@ -878,6 +886,10 @@ i18n
           "pleaseEnterPhone": "يرجى إدخال رقم الهاتف",
           "pleaseEnterDate": "يرجى إدخال التاريخ",
           "pleaseSelectBranch": "يرجى اختيار الفرع",
+          "commentCantBeEmpty": "لا يمكن نشر تعليقا فارغا",
+          "showMore": "عرض المزيد",
+          "showLess": "عرض اقل",
+          "commentRecievedSuccessfuly": "تم استقبال تعليقك بنجاح",
           "pleaseSelectService": "يرجى اختيار الخدمة",
           "appointmentSentSuccussfuly": "تم إرسال طلبك بنجاح، سوف نقوم بالتواصل معك!",
           "orderSuccess": "تم ارسال الطلب بنجاح !",

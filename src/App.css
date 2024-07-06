@@ -60,3 +60,18 @@ body{
     min-height: 250px !important;
   }
 }
+
+.clientOpinion p.comment {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; /* Adjust this value according to your line height */
+}
+
+.clientOpinion p.comment.expanded {
+  -webkit-line-clamp: unset;
+  max-height: unset;
+}
+

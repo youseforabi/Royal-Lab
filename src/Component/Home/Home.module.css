@@ -182,6 +182,42 @@ span {
   margin: 60px 180px;
 }
 
+.comment_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.comment_wrapper label{
+  font-size: 20px;
+  font-weight: 600;
+}
+.comment_wrapper textarea{
+  resize: none;
+  min-height: 200px;
+  border-radius: 8px;
+  border: 2px rgb(222, 222, 222) solid;
+  padding: 12px;
+}
+
+.comment_wrapper button{
+  resize: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  background-color: #B39330;
+  transition: .3s ease-in all;
+}
+
+.comment_wrapper button:hover{
+  background-color: #dfb73f;
+}
+.comment_wrapper textarea:focus{
+  border-color: #dfb73f;
+  outline: none;
+}
+
 .clientCard {
   border: 1px solid #B39330;
   display: flex;
