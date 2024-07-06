@@ -92,6 +92,9 @@ const Navbar = () => {
                           <Link to={'/my-appointments'}>
                             {t('Appointments')}
                           </Link>
+                          <Link to={'/HomeVisit'}>
+                            {t('Visits')}
+                          </Link>
                           <button onClick={logOut}>
                             {t('logOut')}
                           </button>

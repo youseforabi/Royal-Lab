@@ -10,11 +10,13 @@ import authReducer from "./features/auth/authSlice"
 import cartReducer from "./features/cartSlice"
 import ordersReducer from "./features/orderSlice"
 import appointmentsReducer from "./features/appointmentSlice"
+import visitsReducer from "./features/visitSlice"
 
 const rootReducer = combineReducers({
   auth: authReducer,
   orders: ordersReducer,
   appointments: appointmentsReducer,
+  visits: visitsReducer,
   cart: cartReducer,
   services: serviceReducer,
   branches: branchesReducer,

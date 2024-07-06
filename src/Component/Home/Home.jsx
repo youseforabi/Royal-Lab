@@ -243,10 +243,12 @@ const Home = () => {
                 </Link>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <Link className=" text-decoration-none text-black" to={'/branches'}>
                 <div className={Styles.cardHome}>
                 <i className="fa-solid fa-location-dot mb-3 fs-2"></i>
                 <h5 className="mt-2 text-center">{t('Branches')}</h5>
                 </div>
+                </Link>
               </div>
               <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
               <Link className=" text-decoration-none text-black" to={'./Insurances'}>

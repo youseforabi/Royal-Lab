@@ -16,7 +16,7 @@ i18n
           'Orders': 'My Orders',
           'noOrders': 'There is no orders yet!',
           'noAppointments': 'There is no appointments yet!',
-          'Visits': 'Hove visits',
+          'Visits': 'Home visits',
           'Appointments': 'Appointments',
           'Services' : 'Services',
           'About' : 'About Us',
@@ -427,6 +427,7 @@ i18n
           'subject' : 'Subject',
           'notes' : 'Notes (option)',
           'send' : 'Send',
+          'bookVisit' : 'Book a home visit',
 
           // water analysis
           'waterAnalysis' : 'Water Analysis' ,
@@ -631,6 +632,8 @@ i18n
           'noAppointments': 'لا يوجد حجوزات حتى الان!',
           'Appointments': 'المواعيد',
           'Visits': 'الزيارات',
+          'Region': 'المنطقة',
+          'City': 'المدينة',
           'Home' : 'الرئيسية',
           'Services' : 'الخدمات',
           'Results' : 'النتائج',
@@ -754,6 +757,7 @@ i18n
           'companies' :'الشركات',
           'tahalilElgezaa' : 'تحاليل الغذاء',
           'araClients' : 'اراء العملاء',
+          'bookVisit' : 'احجز زيارة منزلية',
           'torki' : 'تركي عبد الرحمن',
           'lorem' :'لوريم إيبسوم دولور يجلس أميت لوريم إيبسوم دولور يجلس أميت كونسيكتور',
           'technical' : 'باقات رويال الأساسية  ',

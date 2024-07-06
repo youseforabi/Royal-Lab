@@ -34,6 +34,8 @@ import Problem from './Component/problem/Problem';
 import Medicaltests from './Component/Medicaltests/Medicaltests';
 import Insurances from './Component/Insurances/Insurances';
 import Vaccinations from './Component/Vaccinations/Vaccinations';
+import ReserveVisit from './Component/ReserveVisit/ReserveVisit';
+import Branches from './Component/Branches/Branches';
 
 const App = () => {
   const { isAuthentication } = useAuth();
@@ -54,6 +56,8 @@ const App = () => {
             <Route path="recipeMedical" element={isAuthentication ? <Recipe /> : <Navigate to="/login" />} />
             <Route path="homeVisit" element={isAuthentication ? <HomeVisit /> : <Navigate to="/login" />} />
             <Route path="about" element={<About />} />
+            <Route path="reserve-home-visit" element={<ReserveVisit />} />
+            <Route path="branches" element={<Branches />} />
             <Route path="getMoney" element={<GetMoney />} />
             <Route path="Insurances" element={<Insurances />} />
             <Route path="medicalTests" element={<Medicaltests />} />
