@@ -182,15 +182,7 @@ const Home = () => {
               </Carousel.Item>
 
 
-                <Carousel.Item>
-                <img
-                  className='d-block w-100'
-                  height={600}
-                  style={{objectFit: 'cover', minHeight: "calc(100vh - 80px)"}}
-                  src="https://img.freepik.com/premium-photo/science-biotechnology-hand-test-medicine-medical-experiment-laboratory-research-tube-generative-ai_163305-233877.jpg?w=996"
-                  alt="Slide 9"
-                />
-              </Carousel.Item>
+          
 
               <Carousel.Item>
                 <img
