@@ -42,8 +42,8 @@ ul a{
   }
 
   .webbing:hover {
-    color: blue;
-    transform: scale(1.1);
+    color: blue !important;
+    transform: scale(1.5);
   }
 /* Media query for smaller screens */
 @media (max-width: 768px) {
