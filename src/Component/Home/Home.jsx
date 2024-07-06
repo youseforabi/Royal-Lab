@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -9,15 +9,89 @@ import TabPanel from '@mui/lab/TabPanel';
 import Styles from './Home.module.css';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import { Carousel } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
+import { API } from '../../features/globals';
+import { api } from '../../API';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { FreeMode, Navigation } from "swiper/modules";
+
+const showSuccessMsg = (msg) => {
+  toast.success(msg, {
+    position: 'top-right',
+  });
+};
+
+const showErrorMessage = (msg) => {
+  toast.error(msg, {
+    position: 'top-right',
+  });
+};
 
 const Home = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir(i18n.language) === 'rtl';
   const [value, setValue] = React.useState('1');
+  const [msg, setMsg] = React.useState('');
+  const [comments, setComments] = React.useState();
+  const [loader, setLoader] = React.useState(false);
+  const [showMore, setShowMore] = React.useState({});
 
+  const handleShowMore = (index) => {
+    setShowMore(prevState => ({
+      ...prevState,
+      [index]: !prevState[index]
+    }));
+  };
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const handleChangeMsg = (event) => {
+    setMsg(event.target.value);
+  };
+
+  const submitComment = async () => {
+    setLoader(true);
+    if (!msg) {
+      showErrorMessage(t("commentCantBeEmpty"));
+      setLoader(false);
+    }  else {
+      try {
+        const formData = new FormData();
+        formData.append('comment', msg);
+
+        const res = await api.post(API + '/api/comment/put', formData,);
+
+        setLoader(false);
+        if (res.data.status === true) {
+          showSuccessMsg(t("commentRecievedSuccessfuly"));
+          setMsg('');
+        }
+      } catch (err) {
+        setLoader(false);
+        console.error('Error submitting form:', err);
+        showErrorMessage(t("submissionFailed"));
+      }
+    }
+  };
+
+  useEffect(() => {
+    const getComments = async () => {
+        try {
+          const res = await axios.get(API + '/api/comments/get');
+          setComments(res.data)
+        } catch (err) {
+          setLoader(false);
+          console.error('Error submitting form:', err);
+        }
+    };
+    getComments();
+
+  }, [])
 
   return (
     <div dir={i18n.dir(i18n.language)}>
@@ -257,29 +331,61 @@ const Home = () => {
       </div>
 
       </div>
+      {
+      (comments && comments.length > 0) && (
 
-      <div className={Styles.clients}>
-        <h2 className='py-4'>{t('araClients')}</h2>
-        <div className="row">
-          <div className="col-lg-6 col-md-12 gy-3">
-            <div className={Styles.clientCard}>
-              <i className="fa-solid fa-user fs-1 px-3"></i>
-              <div className={Styles.clientOpinion}>
-                <p className={Styles.name}>{t('torki')}</p>
-                <p>{t('lorem')}</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 col-md-12 gy-3">
-            <div className={Styles.clientCard}>
-              <i className="fa-solid fa-user fs-1 px-3"></i>
-              <div className={Styles.clientOpinion}>
-                <p className={Styles.name}>{t('torki')}</p>
-                <p>{t('lorem')}</p>
-              </div>
-            </div>
+        <div className={Styles.clients}>
+          <h2 className='py-4'>{t('araClients')}</h2>
+          <div className="row">
+          <Swiper
+            slidesPerView={"auto"}
+            spaceBetween={20}
+            freeMode={true}
+            className="mySwiper"
+            modules={[Navigation, FreeMode]}>
+              {
+                  comments.map((comment, index) => (
+                  <SwiperSlide className="col-lg-6 col-md-12 gy-3 mb-2 h-100" style={{  height: "calc(100% - 20px)",
+                    boxSizing: "border-box"}}>
+                    <div className={Styles.clientCard} style={{  height: "calc(100% - 16px)",
+                    boxSizing: "border-box"}}>
+                      <i className="fa-solid fa-user fs-1 px-3"></i>
+                      <div className={Styles.clientOpinion}>
+                        <p className={Styles.name}>{comment.name}</p>
+                        <p>
+                        {comment.comment.length > 200 && (!showMore[index]) 
+                          ? comment.comment.slice(0, 200) + " ..." 
+                          : comment.comment}
+                        {(comment.comment.length > 200) && (
+                          <button 
+                            onClick={() => handleShowMore(index)} 
+                            style={{ background: 'transparent', border: 'none', color: '#b39330', fontWeight: 600 }}
+                          >
+                            {showMore[index] ? t('showLess') : t('showMore')}
+                          </button>
+                        )}
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  ))
+              }
+            </Swiper>
           </div>
         </div>
+        )
+      }
+      
+      <div className={`${Styles.comment_wrapper} ${Styles.clients}`}>
+          <label htmlFor="totla">{t('leavuscomment')}</label>
+          <textarea onChange={handleChangeMsg} value={msg} className='form-controle' placeholder={t("yourMsg")}></textarea>
+          {loader ? (
+          <div className="spinner-border" role="status">
+            <span className="sr-only">Loading...</span>
+          </div>
+        ) : (
+          <button onClick={submitComment}>{t('send')}</button>
+        )}
       </div>
 
       <div className={Styles.tech}>
@@ -301,6 +407,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
